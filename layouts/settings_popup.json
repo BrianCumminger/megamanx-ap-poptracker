@@ -1,0 +1,25 @@
+{
+    "settings_popup": {
+        "type": "array",
+        "orientation": "vertical",
+        "background": "#000000",
+        "margin": "0,0",
+        "content": [
+            {
+                "name": "Settings",
+                "type": "itemgrid",
+                "item_margin": "5, 7",
+                "item_size": "200, 50",
+                "h_alignment": "left",
+                "rows": [
+                        ["pickupsanity", "sigmalogic"],
+                        ["icelogic", "sigma_medal_count"],
+                        ["jammed_buster", "sigma_weapon_count"],
+                        ["logic_boss_unshuffled_weakness", "sigma_upgrade_count"],
+                        ["logic_leg_sigma", "sigma_heart_tank_count"],
+                        ["", "sigma_sub_tank_count"]
+                    ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,542 @@
+[
+    {
+        "name": "Stages",
+        "children": [
+            {
+                "name": "Intro Stage",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Bee Blader #1",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "HP Pickup (after Bee Blader)",
+                        "visibility_rules": [ "pickupsanity_on" ],
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Small HP Pickup (after Bee Blader)",
+                        "visibility_rules": [ "pickupsanity_on" ],
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Bee Blader #2",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Defeated By Vile",
+                        "access_rules": []
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 70,
+                        "y": 53
+                    }
+                ]
+            },
+            {
+                "name": "Chill Penguin",
+                "access_rules": ["chill_penguin_1"],
+                "sections": [
+                    {
+                        "name": "Legs Capsule",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Heart Tank",
+                        "access_rules": ["fire_wave"]
+                    },
+                    {
+                        "visibility_rules": ["pickupsanity_on"],
+                        "name": "Weapon Energy Pickup (Inside third dome)",
+                        "access_rules": ["fire_wave"]
+                    },
+                    {
+                        "name": "Chill Penguin",
+                        "access_rules": ["$boss_weaknesses_not_required", "fire_wave"]
+                    },
+                    {
+                        "name": "Chill Penguin Clear",
+                        "access_rules": ["$boss_weaknesses_not_required", "fire_wave"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 166,
+                        "y": 53
+                    }
+                ]
+            },
+            {
+                "name": "Armored Armadillo",
+                "access_rules": ["armored_armadillo_1"],
+                "sections": [
+                    {
+                        "name": "Sub Tank",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Mole Borer #1",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "HP Pickup 1 (In blocked ceiling)",
+                        "access_rules": ["helmet"],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "HP Pickup 2 (In blocked ceiling)",
+                        "access_rules": ["helmet"],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Mole Borer #2",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Heart Tank",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "HP Pickup 3 (Next to Hadouken capsule)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Hadouken Capsule",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Armored Armadillo",
+                        "access_rules": ["$boss_weaknesses_not_required", "electric_spark"]
+                    },
+                    {
+                        "name": "Armored Armadillo Clear",
+                        "access_rules": ["$boss_weaknesses_not_required", "electric_spark"]
+                    }
+
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 70,
+                        "y": 101
+                    }
+                ]
+            },
+            {
+                "name": "Spark Mandrill",
+                "access_rules": ["spark_mandrill_1"],
+                "sections": [
+                    {
+                        "name": "Sub Tank",
+                        "access_rules": ["boomerang_cutter"]
+                    },
+                    {
+                        "name": "Thunder Slimer",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Heart Tank",
+                        "access_rules": ["boomerang_cutter"]
+                    },
+                    {
+                        "name": "Spark Mandrill",
+                        "access_rules": ["$boss_weaknesses_not_required", "shotgun_ice"]
+                    },
+                    {
+                        "name": "Spark Mandrill Clear",
+                        "access_rules": ["$boss_weaknesses_not_required", "shotgun_ice"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 118,
+                        "y": 196
+                    }
+                ]
+            },
+            {
+                "name": "Launch Octopus",
+                "access_rules": ["launch_octopus_1"],
+                "sections": [
+                    {
+                        "name": "Anglerge #1",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Anglerge #2",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "HP Pickup (Crane platform above water)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Utuboros #2",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Heart Tank",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Utuboros #1",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Launch Octopus",
+                        "access_rules": ["$boss_weaknesses_not_required", "rolling_shield"]
+                    },
+                    {
+                        "name": "Launch Octopus Clear",
+                        "access_rules": ["$boss_weaknesses_not_required", "rolling_shield"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 118,
+                        "y": 53
+                    }
+                ]
+            },
+            {
+                "name": "Boomer Kuwanger",
+                "access_rules": ["boomer_kuwanger_1"],
+                "sections": [
+                    {
+                        "name": "Heart Tank",
+                        "access_rules": ["boomerang_cutter", "icelogic_on,shotgun_ice,$can_charge"]
+                    },
+                    {
+                        "name": "Boomer Kuwanger",
+                        "access_rules": ["$boss_weaknesses_not_required", "homing_torpedo"]
+                    },
+                    {
+                        "name": "Boomer Kuwanger Clear",
+                        "access_rules": ["$boss_weaknesses_not_required", "homing_torpedo"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 213,
+                        "y": 149
+                    }
+                ]
+            },
+            {
+                "name": "Sting Chameleon",
+                "access_rules": ["sting_chameleon_1"],
+                "sections": [
+                    {
+                        "name": "Body Capsule",
+                        "access_rules": ["legs", "icelogic_on,shotgun_ice,$can_charge"]
+                    },
+                    {
+                        "name": "Heart Tank",
+                        "access_rules": ["legs, launch_octopus_2"]
+                    },
+                    {
+                        "name": "1up Pickup (Inside second mini-cave in mountain)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "HP Pickup (On top of platform in the swamp)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Sting Chameleon",
+                        "access_rules": ["$boss_weaknesses_not_required", "boomerang_cutter"]
+                    },
+                    {
+                        "name": "Sting Chameleon Clear",
+                        "access_rules": ["$boss_weaknesses_not_required", "boomerang_cutter"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 166,
+                        "y": 196
+                    }
+                ]
+            },
+            {
+                "name": "Storm Eagle",
+                "access_rules": ["storm_eagle_1"],
+                "sections": [
+                    {
+                        "name": "Heart Tank",
+                        "access_rules": ["legs"]
+                    },
+                    {
+                        "name": "HP Pickup 1 (Behind first set of gas tanks)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "HP Pickup 2 (Behind second set of gas tanks)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "HP Pickup 3 (Behind third set of gas tanks)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "1up Pickup 1 (Behind wall in third set of gas tanks)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Sub Tank",
+                        "access_rules": [],
+                        "visibility_rules": [""]
+                    },
+                    {
+                        "name": "1up Pickup 2 (Behind fourth set of gas tanks)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Helmet Capsule",
+                        "access_rules": ["legs"]
+                    },
+                    {
+                        "name": "1up Pickup 3 (Above helmet capsule)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Storm Eagle",
+                        "access_rules": ["$boss_weaknesses_not_required", "chameleon_sting"]
+                    },
+                    {
+                        "name": "Storm Eagle Clear",
+                        "access_rules": ["$boss_weaknesses_not_required", "chameleon_sting"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 70,
+                        "y": 149
+                    }
+                ]
+            },
+            {
+                "name": "Flame Mammoth",
+                "access_rules": ["flame_mammoth_1"],
+                "sections": [
+                    {
+                        "name": "HP Pickup 1 (After first conveyor belts section)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Arms Capsule",
+                        "access_rules": ["legs,helmet"]
+                    },
+                    {
+                        "name": "Heart Tank",
+                        "access_rules": ["chill_penguin_2", "$can_charge,chameleon_sting"]
+                    },
+                    {
+                        "name": "HP Pickup 2 (Top platform in Dig Labour section)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "1up Pickup (Top platform in Dig Labour section)",
+                        "access_rules": [],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+
+                    
+                    {
+                        "name": "Sub Tank",
+                        "access_rules": ["legs", "icelogic_on,shotgun_ice,chameleon_sting,$can_charge"]
+                    },
+                                        
+                    {
+                        "name": "Flame Mammoth",
+                        "access_rules": ["$boss_weaknesses_not_required", "storm_tornado"]
+                    },
+                    {
+                        "name": "Flame Mammoth Clear",
+                        "access_rules": ["$boss_weaknesses_not_required", "storm_tornado"]
+                    }
+                    
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 213,
+                        "y": 101
+                    }
+                ]
+            },
+            {
+                "name": "Sigma Fortress 1",
+                "access_rules": ["$is_sigma_open"],
+                "sections": [
+                    {
+                        "name": "Vile",
+                        "access_rules": [""]
+                    },
+                    {
+                        "name": "Boomer Kuwanger (Rematch)",
+                        "access_rules": ["$boss_weaknesses_not_required", "homing_torpedo"]
+                    },
+                    {
+                        "name": "Bospider",
+                        "access_rules": ["$boss_weaknesses_not_required", "shotgun_ice"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 105,
+                        "y": 149
+                    }
+                ]
+            },
+            {
+                "name": "Sigma Fortress 2",
+                "access_rules": ["sigma_1_cleared"],
+                "sections": [
+                    {
+                        "name": "Chill Penguin (Rematch)",
+                        "access_rules": ["$boss_weaknesses_not_required", "fire_wave"]
+                        
+                    },
+                    {
+                        "name": "Storm Eagle (Rematch)",
+                        "access_rules": ["$boss_weaknesses_not_required", "chameleon_sting"]
+                    },
+                    {
+                        "name": "Rangda Bangda",
+                        "access_rules": ["$boss_weaknesses_not_required", "chameleon_sting"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 125,
+                        "y": 149
+                    }
+                ]
+            },
+            {
+                "name": "Sigma Fortress 3",
+                "access_rules": ["sigma_2_cleared"],
+                "sections": [
+                    {
+                        "name": "Armored Armadillo (Rematch)",
+                        "access_rules": ["$boss_weaknesses_not_required", "electric_spark"]
+                    },
+                    {
+                        "name": "HP Pickup 1 (Before Sting Chameleon rematch)",
+                        "access_rules": ["legs,boomerang_cutter"],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Sting Chameleon (Rematch)",
+                        "access_rules": ["$boss_weaknesses_not_required", "boomerang_cutter"]
+                    },
+                    {
+                        "name": "Weapon Energy Pickup 1 (Before Spark Mandrill rematch)",
+                        "access_rules": ["boomerang_cutter"],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "HP Pickup 2 (Before Spark Mandrill rematch)",
+                        "access_rules": ["boomerang_cutter"],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Spark Mandrill (Rematch)",
+                        "access_rules": ["$boss_weaknesses_not_required", "shotgun_ice"]
+                    },
+                    {
+                        "name": "HP Pickup 3 (Before Launch Octopus rematch)",
+                        "access_rules": [""],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Weapon Energy Pickup 2 (Before Launch Octopus rematch)",
+                        "access_rules": [""],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Launch Octopus (Rematch)",
+                        "access_rules": ["$boss_weaknesses_not_required", "rolling_shield"]
+                    },
+                    {
+                        "name": "HP Pickup 4 (On spikes)",
+                        "access_rules": ["$can_charge,chameleon_sting"],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Weapon Energy Pickup 3 (On Spikes)",
+                        "access_rules": ["$can_charge,chameleon_sting"],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "1up Pickup (On spikes)",
+                        "access_rules": ["$can_charge,chameleon_sting", "$can_charge,shotgun_ice"],
+                        "visibility_rules": ["pickupsanity_on"]
+                    },
+                    {
+                        "name": "Flame Mammoth (Rematch)",
+                        "access_rules": ["$boss_weaknesses_not_required", "storm_tornado"]
+                    },
+                    {
+                        "name": "D-Rex",
+                        "access_rules": ["$boss_weaknesses_not_required", "boomerang_cutter"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 145,
+                        "y": 149
+                    }
+                ]
+            },
+            {
+                "name": "Sigma Fortress 4",
+                "access_rules": ["sigma_3_cleared"],
+                "sections": [
+                    {
+                        "name": "Velguarder",
+                        "access_rules": ["$boss_weaknesses_not_required", "shotgun_ice"]
+                        
+                    },
+                    {
+                        "name": "Sigma",
+                        "access_rules": ["$boss_weaknesses_not_required", "electric_spark,rolling_shield"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 165,
+                        "y": 149
+                    }
+                ]
+            }
+        ]
+    }
+]

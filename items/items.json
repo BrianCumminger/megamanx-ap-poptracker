@@ -1,0 +1,772 @@
+[
+    {
+        "name": "Victory",
+        "type": "consumable",
+        "img": "images/icons/blank.png",
+        "disabled_img": "images/icons/blank.png",
+        "codes": "victory"
+    },
+    {
+        "name": "Maverick Medal",
+        "type": "consumable",
+        "img": "images/icons/maverick.png",
+        "disabled_img": "images/icons/maverick_gray.png",
+        "max_quantity": 8,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_font_size": 32,
+        "overlay_background": "#A0000000",
+        "codes": "maverick_medal"
+    },
+
+    {
+        "name": "Blank",
+        "type": "toggle",
+        "img": "images/icons/blank.png",
+        "disabled_img": "images/icons/blank.png",
+        "codes": "blank"
+    },
+
+    {
+        "name": "Armored Armadillo Access Codes",
+        "type": "toggle",
+        "img": "images/icons/armoredarmadillo.png",
+        "disabled_img": "images/icons/armoredarmadillo_gray.png",
+        "codes": "stage_armored_armadillo"
+    },
+    {
+        "name": "Boomer Kuwanger Access Codes",
+        "type": "toggle",
+        "img": "images/icons/boomerkuwanger.png",
+        "disabled_img": "images/icons/boomerkuwanger_gray.png",
+        "codes": "stage_boomer_kuwanger"
+    },
+    {
+        "name": "Chill Penguin Access Codes",
+        "type": "toggle",
+        "img": "images/icons/chillpenguin.png",
+        "disabled_img": "images/icons/chillpenguin_gray.png",
+        "codes": "stage_chill_penguin"
+    },
+    {
+        "name": "Flame Mammoth Access Codes",
+        "type": "toggle",
+        "img": "images/icons/flamemammoth.png",
+        "disabled_img": "images/icons/flamemammoth_gray.png",
+        "codes": "stage_flame_mammoth"
+    },
+    {
+        "name": "Launch Octopus Access Codes",
+        "type": "toggle",
+        "img": "images/icons/launchoctopus.png",
+        "disabled_img": "images/icons/launchoctopus_gray.png",
+        "codes": "stage_launch_octopus"
+    },
+    {
+        "name": "Spark Mandrill Access Codes",
+        "type": "toggle",
+        "img": "images/icons/sparkmandrill.png",
+        "disabled_img": "images/icons/sparkmandrill_gray.png",
+        "codes": "stage_spark_mandrill"
+    },
+    {
+        "name": "Sting Chameleon Access Codes",
+        "type": "toggle",
+        "img": "images/icons/stingchameleon.png",
+        "disabled_img": "images/icons/stingchameleon_gray.png",
+        "codes": "stage_sting_chameleon"
+    },
+    {
+        "name": "Storm Eagle Access Codes",
+        "type": "toggle",
+        "img": "images/icons/stormeagle.png",
+        "disabled_img": "images/icons/stormeagle_gray.png",
+        "codes": "stage_storm_eagle"
+    },
+    {
+        "name": "Sigma Fortress Access Codes",
+        "type": "toggle",
+        "img": "images/icons/sigma.png",
+        "disabled_img": "images/icons/sigma_gray.png",
+        "codes": "stage_sigma_fortress"
+    },
+
+    {
+        "name": "Shotgun Ice",
+        "type": "toggle",
+        "img": "images/icons/shotgunice.png",
+        "disabled_img": "images/icons/shotgunice_gray.png",
+        "codes": "shotgun_ice"
+    },
+    {
+        "name": "Electric Spark",
+        "type": "toggle",
+        "img": "images/icons/electricspark.png",
+        "disabled_img": "images/icons/electricspark_gray.png",
+        "codes": "electric_spark"
+    },
+    {
+        "name": "Rolling Shield",
+        "type": "toggle",
+        "img": "images/icons/rollingshield.png",
+        "disabled_img": "images/icons/rollingshield_gray.png",
+        "codes": "rolling_shield"
+    },
+    {
+        "name": "Homing Torpedo",
+        "type": "toggle",
+        "img": "images/icons/homingtorpedo.png",
+        "disabled_img": "images/icons/homingtorpedo_gray.png",
+        "codes": "homing_torpedo"
+    },
+    {
+        "name": "Boomerang Cutter",
+        "type": "toggle",
+        "img": "images/icons/boomerangcutter.png",
+        "disabled_img": "images/icons/boomerangcutter_gray.png",
+        "codes": "boomerang_cutter"
+    },
+    {
+        "name": "Chameleon Sting",
+        "type": "toggle",
+        "img": "images/icons/chameleonsting.png",
+        "disabled_img": "images/icons/chameleonsting_gray.png",
+        "codes": "chameleon_sting"
+    },
+    {
+        "name": "Storm Tornado",
+        "type": "toggle",
+        "img": "images/icons/stormtornado.png",
+        "disabled_img": "images/icons/stormtornado_gray.png",
+        "codes": "storm_tornado"
+    },
+    {
+        "name": "Fire Wave",
+        "type": "toggle",
+        "img": "images/icons/firewave.png",
+        "disabled_img": "images/icons/firewave_gray.png",
+        "codes": "fire_wave"
+    },
+    {
+        "name": "Hadouken",
+        "type": "toggle",
+        "img": "images/icons/hadouken.png",
+        "disabled_img": "images/icons/hadouken_gray.png",
+        "codes": "hadouken"
+    },
+
+    {
+        "name": "Heart Tank",
+        "type": "consumable",
+        "max_quantity": 8,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_font_size": 32,
+        "overlay_background": "#A0000000",
+        "img": "images/icons/heart.png",
+        "disabled_img": "images/icons/heart_gray.png",
+        "codes": "heart_tank"
+    },
+    {
+        "name": "Sub Tank",
+        "type": "consumable",
+        "max_quantity": 4,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_font_size": 32,
+        "overlay_background": "#A0000000",
+        "img": "images/icons/subtank.png",
+        "disabled_img": "images/icons/subtank_gray.png",
+        "codes": "sub_tank"
+    },
+    
+    {
+        "name": "Helmet Upgrade",
+        "type": "toggle",
+        "img": "images/icons/helmet.png",
+        "disabled_img": "images/icons/helmet_gray.png",
+        "codes": "helmet"
+    },
+    {
+        "name": "Body Upgrade",
+        "type": "toggle",
+        "img": "images/icons/body.png",
+        "disabled_img": "images/icons/body_gray.png",
+        "codes": "body"
+    },
+    {
+        "name": "Arms Upgrade",
+        "type": "toggle",
+        "img": "images/icons/arms.png",
+        "disabled_img": "images/icons/arms_gray.png",
+        "codes": "arms_old"
+    },
+    {
+        "name": "Legs Upgrade",
+        "type": "toggle",
+        "img": "images/icons/legs.png",
+        "disabled_img": "images/icons/legs_gray.png",
+        "codes": "legs"
+    },
+
+
+    {
+        "name": "Large HP Refill",
+        "type": "consumable",
+        "max_quantity": 100,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "img": "images/icons/large_hp.png",
+        "disabled_img": "images/icons/large_hp_gray.png",
+        "codes": "large_hp"
+    },
+    {
+        "name": "Small HP Refill",
+        "type": "consumable",
+        "max_quantity": 100,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "img": "images/icons/small_hp.png",
+        "disabled_img": "images/icons/small_hp_gray.png",
+        "codes": "small_hp"
+    },
+    {
+        "name": "Extra Life",
+        "type": "consumable",
+        "max_quantity": 100,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "img": "images/icons/extralife.png",
+        "disabled_img": "images/icons/extralife_gray.png",
+        "codes": "life"
+    },
+    {
+        "name": "Launch Octopus Cleared",
+        "type": "toggle",
+        "codes": "launch_octopus_cleared",
+        "img": "images/icons/launchoctopus_x.png",
+        "disabled_img": "images/icons/launchoctopus_gray.png"
+    },
+    {
+        "name": "Launch Octopus State",
+        "type": "progressive",
+        "loop": false,
+        "allow_disabled": false,
+        "codes": "launch_octopus_state",
+        "stages": [
+          {
+            "img": "images/icons/launchoctopus_gray.png",
+            "name": "Launch Octopus Locked",
+            "codes": "launch_octopus_0",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/launchoctopus.png",
+            "name": "Launch Octopus Open",
+            "codes": "launch_octopus_1",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/launchoctopus_x.png",
+            "name": "Launch Octopus Defeated",
+            "codes": "launch_octopus_2",
+            "inherit_codes": true
+          }
+        ]
+    },
+    {
+        "name": "Spark Mandrill Cleared",
+        "type": "toggle",
+        "codes": "spark_mandrill_cleared",
+        "img": "images/icons/sparkmandrill_x.png",
+        "disabled_img": "images/icons/sparkmandrill_gray.png"
+    },
+    {
+        "name": "Spark Mandrill State",
+        "type": "progressive",
+        "loop": false,
+        "allow_disabled": false,
+        "codes": "spark_mandrill_state",
+        "stages": [
+          {
+            "img": "images/icons/sparkmandrill_gray.png",
+            "name": "Spark Mandrill Locked",
+            "codes": "spark_mandrill_0",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/sparkmandrill.png",
+            "name": "Spark Mandrill Open",
+            "codes": "spark_mandrill_1",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/sparkmandrill_x.png",
+            "name": "Spark Mandrill Defeated",
+            "codes": "spark_mandrill_2",
+            "inherit_codes": true
+          }
+        ]
+    },
+    {
+        "name": "Armored Armadillo Cleared",
+        "type": "toggle",
+        "codes": "armored_armadillo_cleared",
+        "img": "images/icons/armoredarmadillo_x.png",
+        "disabled_img": "images/icons/armoredarmadillo_gray.png"
+    },
+    {
+        "name": "Armored Armadillo State",
+        "type": "progressive",
+        "loop": false,
+        "allow_disabled": false,
+        "codes": "armored_armadillo_state",
+        "stages": [
+          {
+            "img": "images/icons/armoredarmadillo_gray.png",
+            "name": "Armored Armadillo Locked",
+            "codes": "armored_armadillo_0",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/armoredarmadillo.png",
+            "name": "Armored Armadillo Open",
+            "codes": "armored_armadillo_1",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/armoredarmadillo_x.png",
+            "name": "Armored Armadillo Defeated",
+            "codes": "armored_armadillo_2",
+            "inherit_codes": true
+          }
+        ]
+    },
+    {
+        "name": "Chill Penguin Cleared",
+        "type": "toggle",
+        "codes": "chill_penguin_cleared",
+        "img": "images/icons/chillpenguin_x.png",
+        "disabled_img": "images/icons/chillpenguin_gray.png"
+    },
+    {
+        "name": "Chill Penguin State",
+        "type": "progressive",
+        "loop": false,
+        "allow_disabled": false,
+        "stages": [
+          {
+            "img": "images/icons/chillpenguin_gray.png",
+            "name": "Chill Penguin Locked",
+            "codes": "chill_penguin_state,chill_penguin_0",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/chillpenguin.png",
+            "name": "Chill Penguin Open",
+            "codes": "chill_penguin_state,chill_penguin_1",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/chillpenguin_x.png",
+            "name": "Chill Penguin Defeated",
+            "codes": "chill_penguin_state,chill_penguin_2",
+            "inherit_codes": true
+          }
+        ]
+    },
+    {
+        "name": "Boomer Kuwanger Cleared",
+        "type": "toggle",
+        "codes": "boomer_kuwanger_cleared",
+        "img": "images/icons/boomerkuwanger_x.png",
+        "disabled_img": "images/icons/boomerkuwanger_gray.png"
+    },
+    {
+        "name": "Boomer Kuwanger State",
+        "type": "progressive",
+        "loop": false,
+        "allow_disabled": false,
+        "codes": "boomer_kuwanger_state",
+        "stages": [
+          {
+            "img": "images/icons/boomerkuwanger_gray.png",
+            "name": "Boomer Kuwanger Locked",
+            "codes": "boomer_kuwanger_0",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/boomerkuwanger.png",
+            "name": "Boomer Kuwanger Open",
+            "codes": "boomer_kuwanger_1",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/boomerkuwanger_x.png",
+            "name": "Boomer Kuwanger Defeated",
+            "codes": "boomer_kuwanger_2",
+            "inherit_codes": true
+          }
+        ]
+    },
+    {
+        "name": "Sting Chameleon Cleared",
+        "type": "toggle",
+        "codes": "sting_chameleon_cleared",
+        "img": "images/icons/stingchameleon_x.png",
+        "disabled_img": "images/icons/stingchameleon_gray.png"
+    },
+    {
+        "name": "Sting Chameleon State",
+        "type": "progressive",
+        "loop": false,
+        "allow_disabled": false,
+        "codes": "sting_chameleon_state",
+        "stages": [
+          {
+            "img": "images/icons/stingchameleon_gray.png",
+            "name": "Sting Chameleon Locked",
+            "codes": "sting_chameleon_0",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/stingchameleon.png",
+            "name": "Sting Chameleon Open",
+            "codes": "sting_chameleon_1",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/stingchameleon_x.png",
+            "name": "Sting Chameleon Defeated",
+            "codes": "sting_chameleon_2",
+            "inherit_codes": true
+          }
+        ]
+    },
+    {
+        "name": "Storm Eagle Cleared",
+        "type": "toggle",
+        "codes": "storm_eagle_cleared",
+        "img": "images/icons/stormeagle_x.png",
+        "disabled_img": "images/icons/stormeagle_gray.png"
+    },
+    {
+        "name": "Storm Eagle State",
+        "type": "progressive",
+        "loop": false,
+        "allow_disabled": false,
+        "codes": "storm_eagle_state",
+        "stages": [
+          {
+            "img": "images/icons/stormeagle_gray.png",
+            "name": "Storm Eagle Locked",
+            "codes": "storm_eagle_0",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/stormeagle.png",
+            "name": "Storm Eagle Open",
+            "codes": "storm_eagle_1",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/stormeagle_x.png",
+            "name": "Storm Eagle Defeated",
+            "codes": "storm_eagle_2",
+            "inherit_codes": true
+          }
+        ]
+    },
+    {
+        "name": "Flame Mammoth Cleared",
+        "type": "toggle",
+        "codes": "flame_mammoth_cleared",
+        "img": "images/icons/flamemammoth_x.png",
+        "disabled_img": "images/icons/flamemammoth_gray.png"
+    },
+    {
+        "name": "Flame Mammoth State",
+        "type": "progressive",
+        "loop": false,
+        "allow_disabled": false,
+        "codes": "flame_mammoth_state",
+        "stages": [
+          {
+            "img": "images/icons/flamemammoth_gray.png",
+            "name": "Flame Mammoth Locked",
+            "codes": "flame_mammoth_0",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/flamemammoth.png",
+            "name": "Flame Mammoth Open",
+            "codes": "flame_mammoth_1",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/flamemammoth_x.png",
+            "name": "Flame Mammoth Defeated",
+            "codes": "flame_mammoth_2",
+            "inherit_codes": true
+          }
+        ]
+    },
+    {
+        "name": "Sigma 1 Cleared",
+        "type": "toggle",
+        "codes": "sigma_1_cleared"
+    },
+    {
+        "name": "Sigma 2 Cleared",
+        "type": "toggle",
+        "codes": "sigma_2_cleared"
+    },
+    {
+        "name": "Sigma 3 Cleared",
+        "type": "toggle",
+        "codes": "sigma_3_cleared"
+    },
+    {
+        "name": "Starting Lives",
+        "type": "consumable",
+        "max_quantity": 100,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_font_size": 20,
+        "img": "images/icons/extralife.png",
+        "disabled_img": "images/icons/extralife_gray.png",
+        "codes": "startlives"
+    },
+
+    {
+        "name": "Pickupsanity",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+          {
+            "img": "images/settings/pickupsanity_off.png",
+            "name": "Pickupsanity - Off",
+            "codes": "pickupsanity,pickupsanity_off",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/pickupsanity_on.png",
+            "name": "Pickupsanity - On",
+            "codes": "pickupsanity,pickupsanity_on"
+          }
+        ]
+    },
+    {
+        "name": "Arms Upgrade",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "arms",
+        "stages": [
+          {
+            "img": "images/icons/arms_gray.png",
+            "name": "No Arms Upgrade",
+            "codes": "arms0",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/arms.png",
+            "name": "Regular Arms Upgrade",
+            "codes": "arms1",
+            "inherit_codes": true
+          },
+          {
+            "img": "images/icons/arms2.png",
+            "name": "Extra Arms Upgrade",
+            "codes": "arms2",
+            "inherit_codes": true
+          }
+        ]
+    },
+      
+    {
+        "name": "Charged Shotgun Ice Logic",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/settings/icelogic_off.png",
+                "name": "Charged Shotgun Ice Logic - Off",
+                "codes": "icelogic,icelogic_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Charged Shotgun Ice Logic - On",
+                "codes": "icelogic,icelogic_on",
+                "img": "images/settings/icelogic_on.png"
+            }
+        ]
+    },
+    {
+        "name": "Jammed Buster",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Jammed Buster - Off",
+                "codes": "jammed_buster,jammed_buster_off",
+                "inherit_codes": false,
+                "img": "images/settings/jammedbuster_off.png"
+            },
+            {
+                "name": "Jammed Buster - On",
+                "codes": "jammed_buster,jammed_buster_on",
+                "img": "images/settings/jammedbuster_on.png"
+            }
+        ]
+    },
+
+    {
+        "name": "Sigma Logic Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "codes": "sigmalogic",
+        "stages": [
+          {
+            "img": "images/settings/sigmalogic_multiworld.png",
+            "name": "Sigma Logic - Multiworld",
+            "codes": "sigmalogic_multiworld",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/sigmalogic_medals.png",
+            "name": "Sigma Logic - Medals",
+            "codes": "sigmalogic_medals",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/sigmalogic_weapons.png",
+            "name": "Sigma Logic - Weapons",
+            "codes": "sigmalogic_weapons",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/sigmalogic_upgrades.png",
+            "name": "Sigma Logic - Upgrades",
+            "codes": "sigmalogic_upgrades",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/sigmalogic_hearttanks.png",
+            "name": "Sigma Logic - Heart Tanks",
+            "codes": "sigmalogic_hearttanks",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/sigmalogic_subtanks.png",
+            "name": "Sigma Logic - Sub Tanks",
+            "codes": "sigmalogic_subtanks",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/sigmalogic_all.png",
+            "name": "Sigma Logic - All",
+            "codes": "sigmalogic_all",
+            "inherit_codes": false
+          }
+        ]
+    },
+
+    {
+        "name": "Sigma Open Logic AP",
+        "type": "consumable",
+        "initial_quantity": 1,
+        "img": "images/icons/sigma.png",
+        "codes": "sigma_open"
+    },
+    {
+        "name": "Sigma Weapon Count",
+        "type": "consumable",
+        "initial_quantity": 8,
+        "max_quantity": 8,
+        "overlay_font_size": 26,
+        "img": "images/settings/sigmalogic_weapons_count.png",
+        "codes": "sigma_weapon_count"
+    },
+    {
+        "name": "Sigma Upgrade Count",
+        "type": "consumable",
+        "initial_quantity": 3,
+        "max_quantity": 4,
+        "overlay_font_size": 26,
+        "img": "images/settings/sigmalogic_upgrades_count.png",
+        "codes": "sigma_upgrade_count"
+    },
+    {
+        "name": "Sigma Heart Tank Count",
+        "type": "consumable",
+        "initial_quantity": 8,
+        "max_quantity": 8,
+        "overlay_font_size": 26,
+        "img": "images/settings/sigmalogic_hearttanks_count.png",
+        "codes": "sigma_heart_tank_count"
+    },
+    {
+        "name": "Sigma Sub Tank Count",
+        "type": "consumable",
+        "initial_quantity": 4,
+        "max_quantity": 4,
+        "overlay_font_size": 26,
+        "img": "images/settings/sigmalogic_subtanks_count.png",
+        "codes": "sigma_sub_tank_count"
+    },
+    {
+        "name": "Sigma Medal Count",
+        "type": "consumable",
+        "initial_quantity": 8,
+        "max_quantity": 8,
+        "overlay_font_size": 26,
+        "img": "images/settings/sigmalogic_medals_count.png",
+        "codes": "sigma_medal_count"
+    },
+    {
+        "name": "Logic Leg Sigma",
+        "type": "toggle",
+        "img": "images/settings/sigmalogic_legs_on.png",
+        "disabled_img": "images/settings/sigmalogic_legs_off.png",
+        "codes": "logic_leg_sigma"
+    },
+    {
+        "name": "Logic Boss Weakness",
+        "type": "toggle",
+        "img": "images/icons/sigma.png",
+        "codes": "logic_boss_weakness"
+    },
+    {
+        "name": "Boss Weakness Rando",
+        "type": "consumable",
+        "img": "images/icons/sigma.png",
+        "codes": "boss_weakness_rando"
+    },
+    {
+        "name": "Logic Boss Unshuffled Weakness",
+        "type": "toggle",
+        "img": "images/settings/unshuffled_weaknesses_on.png",
+        "disabled_img": "images/settings/unshuffled_weaknesses_off.png",
+        "codes": "logic_boss_unshuffled_weakness"
+    },
+    {
+        "name": "Boss Weakness Strictness",
+        "type": "consumable",
+        "img": "images/icons/sigma.png",
+        "disabled_img": "images/icons/sigma.png",
+        "codes": "boss_weakness_strictness"
+    }
+]

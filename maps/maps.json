@@ -1,0 +1,8 @@
+[
+    {
+        "name": "stages",
+        "location_size": 10,
+        "location_border_thickness": 2,
+        "img": "images/maps/stages.png"
+    }
+]

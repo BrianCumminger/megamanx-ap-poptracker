@@ -1,0 +1,16 @@
+﻿{
+    "name": "Mega Man X",
+    "game_name": "Mega Man X",
+    "package_version": "0.0.1",
+    "package_uid": "megamanx_meridianbc",
+    "platform": "pc",
+    "author": "MeridianBC",
+    "variants": {
+        "standard": {
+            "display_name": "Map Tracker",
+            "flags": [
+                "ap"
+            ]
+        }
+    }
+}

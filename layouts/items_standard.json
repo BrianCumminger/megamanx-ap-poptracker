@@ -1,0 +1,32 @@
+{
+    "shared_item_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "5, 7",
+                        "item_size": 60,
+                        "h_alignment": "left",
+                        "rows": [
+                            ["blank", "launch_octopus_state", "chill_penguin_state", "blank"],
+                            ["armored_armadillo_state", "blank", "blank", "flame_mammoth_state"],
+                            ["storm_eagle_state", "blank", "blank", "boomer_kuwanger_state"],
+                            ["blank", "spark_mandrill_state","sting_chameleon_state", "stage_sigma_fortress"],
+                            ["shotgun_ice", "electric_spark", "rolling_shield", "homing_torpedo"],
+                            ["boomerang_cutter", "chameleon_sting", "storm_tornado", "fire_wave"],
+                            ["helmet", "body", "arms", "legs"],
+                            ["heart_tank", "sub_tank", "hadouken","maverick_medal"]
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
