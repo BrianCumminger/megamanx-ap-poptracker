@@ -26,6 +26,16 @@ function enable_if_exists(slot_data, slotname)
         end
     end
 end
+function enable_progressive_if_exists(slot_data, slotname)
+    if slot_data[slotname] then
+        obj = Tracker:FindObjectForCode(slotname)
+        if slot_data[slotname] == 0 then
+            obj.CurrentStage = 0
+        else
+            obj.CurrentStage = 1
+        end
+    end
+end
 
 function onClear(slot_data)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -123,13 +133,13 @@ function onClear(slot_data)
     set_if_exists(slot_data, 'sigma_sub_tank_count')
     set_if_exists(slot_data, 'sigma_medal_count')
 
-    enable_if_exists(slot_data, 'logic_leg_sigma')
+    enable_progressive_if_exists(slot_data, 'logic_leg_sigma')
     enable_if_exists(slot_data, 'logic_boss_weakness')
     set_if_exists(slot_data, 'boss_weakness_rando')
 
     if Tracker:FindObjectForCode('logic_boss_weakness').Active then
         if Tracker:FindObjectForCode('boss_weakness_rando').AcquiredCount == 0 then
-            Tracker:FindObjectForCode('logic_boss_unshuffled_weakness').Active = true
+            Tracker:FindObjectForCode('logic_boss_unshuffled_weakness').CurrentStage = 1
         end
     end
 

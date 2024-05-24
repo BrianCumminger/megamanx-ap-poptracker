@@ -26,7 +26,7 @@ function boss_weaknesses_not_required()
     --local logic_boss_weakness = Tracker:FindObjectForCode("logic_boss_weakness").Active
     --local boss_weakness_strictness = Tracker:FindObjectForCode("boss_weakness_strictness").Active
     --if (not logic_boss_weakness) and (not boss_weakness_strictness) then return true end
-    local logic_boss_unshuffled_weakness = Tracker:FindObjectForCode('logic_boss_unshuffled_weakness').Active
+    local logic_boss_unshuffled_weakness = Tracker:FindObjectForCode('logic_boss_unshuffled_weakness').CurrentStage == 1
     return not logic_boss_unshuffled_weakness
 end
 
@@ -52,7 +52,7 @@ function get_upgrades_count()
 end
 
 function sigma_legs_req_met()
-    local logic_leg_sigma = Tracker:FindObjectForCode("logic_leg_sigma").Active
+    local logic_leg_sigma = Tracker:FindObjectForCode("logic_leg_sigma").CurrentStage == 1
     local legs = Tracker:FindObjectForCode("legs").Active
     local legs_req_met = false
     if legs then legs_req_met = true end

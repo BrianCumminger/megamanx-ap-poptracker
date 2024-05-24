@@ -737,11 +737,23 @@
         "codes": "sigma_medal_count"
     },
     {
-        "name": "Logic Leg Sigma",
-        "type": "toggle",
-        "img": "images/settings/sigmalogic_legs_on.png",
-        "disabled_img": "images/settings/sigmalogic_legs_off.png",
-        "codes": "logic_leg_sigma"
+      "name": "Logic Leg Sigma",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+          {
+            "img": "images/settings/sigmalogic_legs_off.png",
+            "name": "Sigma Logic Legs - Off",
+            "codes": "logic_leg_sigma,logic_leg_sigma_off",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/sigmalogic_legs_on.png",
+            "name": "Sigma Logic Legs - On",
+            "codes": "logic_leg_sigma,logic_leg_sigma_on"
+          }
+        ]
     },
     {
         "name": "Logic Boss Weakness",
@@ -756,11 +768,23 @@
         "codes": "boss_weakness_rando"
     },
     {
-        "name": "Logic Boss Unshuffled Weakness",
-        "type": "toggle",
-        "img": "images/settings/unshuffled_weaknesses_on.png",
-        "disabled_img": "images/settings/unshuffled_weaknesses_off.png",
-        "codes": "logic_boss_unshuffled_weakness"
+      "name": "Logic Boss Unshuffled Weakness",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+          {
+            "img": "images/settings/unshuffled_weaknesses_off.png",
+            "name": "Logic Boss Unshuffled Weakness - Off",
+            "codes": "logic_boss_unshuffled_weakness,logic_boss_unshuffled_weakness_off",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/unshuffled_weaknesses_on.png",
+            "name": "Logic Boss Unshuffled Weakness - On",
+            "codes": "logic_boss_unshuffled_weakness,logic_boss_unshuffled_weakness_on"
+          }
+        ]
     },
     {
         "name": "Boss Weakness Strictness",
