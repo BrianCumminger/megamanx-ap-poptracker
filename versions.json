@@ -1,0 +1,20 @@
+{
+    "versions": [
+        {
+            "package_version": "0.0.2",
+            "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v0.0.2/megamanx-ap-poptracker.zip",
+            "sha256": "d55a2a5ea7cfb0a7ea32d07d8b399021b23d5653e70827f020880d3d9665211c",
+            "changelog": [
+                "Support v1.0.0 logic, improved documentation, added autoupdate"
+            ]
+        },
+        {
+            "package_version": "0.0.1",
+            "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v0.0.1/megamanx-ap-poptracker.zip",
+            "sha256": "f2b1f81f2b3c1b13bfbfba749c9df6764fee8aa739149c8a6e128e81bd6c039c",
+            "changelog": [
+                "Initial release"
+            ]
+        }
+    ]
+}
