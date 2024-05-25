@@ -7,14 +7,27 @@ This is a PopTracker pack for Mega Man X Archipelago. Created by MeridianBC.
 Just download the lastest build or source and put in your PopTracker packs folder.
 
 ## Features
-Detects and tracks all logic as of Mega Man X AP 0.14 including:
+Detects and tracks all logic as of Mega Man X AP 1.0 including:
 
 - Charged shotgun ice logic
 - Pickupsanity
 - Jammed buster
-- Sigma access modes (medals/weapons/upgrades/heart/sub/all)
+- Sigma access conditions (medals/weapons/upgrades/heart/sub/access codes)
 - Legs required for Sigma
 - Boss weaknesses required
+
+## Usage
+When using Archipelago auto tracking, logic settings will all be set automatically.  For manual operation (or to check which settings are active), click on the "Open Pack Settings" button at the top of PopTracker while this pack is loaded.
+
+Brief notes for various settings when not using autotracker:
+- Right hand side sigma options: sets the access requirements for Sigma stage 1.  If all of these are blank or set to 0, Sigma 1 will unlock when Sigma Stage Access Codes is acquired.
+- Bosses Require (Unshuffled) Weaknesses: Does not map directly to a yaml option.  If boss weaknesses are required by logic (`logic_boss_weakness: true`) and weaknesses are unshuffled (`boss_weakness_rando: vanilla`), this will show bosses as being in logic only if you have their required weakness.  Otherwise, bosses will always be shown as in logic if you can reach them.
+- Pickupsanity: same as yaml option, adds hp/weapon/life pickups to location pool.
+- Charged Ice Logic: yaml option `logic_charged_shotgun_ice`, puts various charged ice tricks into logic.
+- Jammed Buster: yaml option `jammed_buster` - adds an extra arm upgrade to the pool which will be indicated with a "2" in the corner of the arms upgrade icon.
+- Sigma Logic Legs: yaml option `logic_leg_sigma`, toggles whether legs upgrade is logically required for Sigma stages.
+- Sigma Stages Open As Group: yaml option `sigma_all_levels`
+
 
 ## More Info
 
