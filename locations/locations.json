@@ -142,7 +142,7 @@
                     },
                     {
                         "name": "Heart Tank",
-                        "access_rules": ["boomerang_cutter"]
+                        "access_rules": ["boomerang_cutter", "legs"]
                     },
                     {
                         "name": "Spark Mandrill",
@@ -414,7 +414,7 @@
             },
             {
                 "name": "Sigma Fortress 2",
-                "access_rules": ["sigma_1_cleared"],
+                "access_rules": ["sigma_1_cleared", "$are_sigma_two_and_three_open"],
                 "sections": [
                     {
                         "name": "Chill Penguin (Rematch)",
@@ -440,7 +440,7 @@
             },
             {
                 "name": "Sigma Fortress 3",
-                "access_rules": ["sigma_2_cleared"],
+                "access_rules": ["sigma_2_cleared", "$are_sigma_two_and_three_open"],
                 "sections": [
                     {
                         "name": "Armored Armadillo (Rematch)",
@@ -517,7 +517,7 @@
             },
             {
                 "name": "Sigma Fortress 4",
-                "access_rules": ["sigma_3_cleared"],
+                "access_rules": ["$is_sigma_four_open"],
                 "sections": [
                     {
                         "name": "Velguarder",

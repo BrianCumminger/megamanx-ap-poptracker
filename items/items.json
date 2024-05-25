@@ -532,18 +532,6 @@
         "type": "toggle",
         "codes": "sigma_3_cleared"
     },
-    {
-        "name": "Starting Lives",
-        "type": "consumable",
-        "max_quantity": 100,
-        "increment": 1,
-        "decrement": 1,
-        "initial_quantity": 0,
-        "overlay_font_size": 20,
-        "img": "images/icons/extralife.png",
-        "disabled_img": "images/icons/extralife_gray.png",
-        "codes": "startlives"
-    },
 
     {
         "name": "Pickupsanity",
@@ -632,69 +620,16 @@
     },
 
     {
-        "name": "Sigma Logic Setting",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "initial_stage_idx": 1,
-        "codes": "sigmalogic",
-        "stages": [
-          {
-            "img": "images/settings/sigmalogic_multiworld.png",
-            "name": "Sigma Logic - Multiworld",
-            "codes": "sigmalogic_multiworld",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/sigmalogic_medals.png",
-            "name": "Sigma Logic - Medals",
-            "codes": "sigmalogic_medals",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/sigmalogic_weapons.png",
-            "name": "Sigma Logic - Weapons",
-            "codes": "sigmalogic_weapons",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/sigmalogic_upgrades.png",
-            "name": "Sigma Logic - Upgrades",
-            "codes": "sigmalogic_upgrades",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/sigmalogic_hearttanks.png",
-            "name": "Sigma Logic - Heart Tanks",
-            "codes": "sigmalogic_hearttanks",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/sigmalogic_subtanks.png",
-            "name": "Sigma Logic - Sub Tanks",
-            "codes": "sigmalogic_subtanks",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/sigmalogic_all.png",
-            "name": "Sigma Logic - All",
-            "codes": "sigmalogic_all",
-            "inherit_codes": false
-          }
-        ]
-    },
-
-    {
         "name": "Sigma Open Logic AP",
         "type": "consumable",
-        "initial_quantity": 1,
+        "initial_quantity": 0,
         "img": "images/icons/sigma.png",
         "codes": "sigma_open"
     },
     {
         "name": "Sigma Weapon Count",
         "type": "consumable",
-        "initial_quantity": 8,
+        "initial_quantity": 0,
         "max_quantity": 8,
         "overlay_font_size": 26,
         "img": "images/settings/sigmalogic_weapons_count.png",
@@ -703,7 +638,7 @@
     {
         "name": "Sigma Upgrade Count",
         "type": "consumable",
-        "initial_quantity": 3,
+        "initial_quantity": 0,
         "max_quantity": 4,
         "overlay_font_size": 26,
         "img": "images/settings/sigmalogic_upgrades_count.png",
@@ -712,7 +647,7 @@
     {
         "name": "Sigma Heart Tank Count",
         "type": "consumable",
-        "initial_quantity": 8,
+        "initial_quantity": 0,
         "max_quantity": 8,
         "overlay_font_size": 26,
         "img": "images/settings/sigmalogic_hearttanks_count.png",
@@ -721,7 +656,7 @@
     {
         "name": "Sigma Sub Tank Count",
         "type": "consumable",
-        "initial_quantity": 4,
+        "initial_quantity": 0,
         "max_quantity": 4,
         "overlay_font_size": 26,
         "img": "images/settings/sigmalogic_subtanks_count.png",
@@ -730,7 +665,7 @@
     {
         "name": "Sigma Medal Count",
         "type": "consumable",
-        "initial_quantity": 8,
+        "initial_quantity": 0,
         "max_quantity": 8,
         "overlay_font_size": 26,
         "img": "images/settings/sigmalogic_medals_count.png",
@@ -792,5 +727,24 @@
         "img": "images/icons/sigma.png",
         "disabled_img": "images/icons/sigma.png",
         "codes": "boss_weakness_strictness"
+    },
+    {
+      "name": "Group Sigma Levels",
+      "type": "progresive",
+      "allow_disabled": false,
+      "loop": true,
+      "codes": "sigma_all_levels",
+      "stages": [
+        {
+          "img": "images/settings/sigma_level_group_off.png",
+          "name": "Group Sigma Levels - Off",
+          "codes": "sigma_all_levels,sigma_all_levels_off"
+        },
+        {
+          "img": "images/settings/sigma_level_group_on.png",
+          "name": "Group Sigma Levels - On",
+          "codes": "sigma_all_levels,sigma_all_levels_on"
+        }
+      ]
     }
 ]

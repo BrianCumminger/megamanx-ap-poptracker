@@ -36,6 +36,40 @@ function enable_progressive_if_exists(slot_data, slotname)
         end
     end
 end
+function set_stage_state_unlocked(stagecode)
+    local state = Tracker:FindObjectForCode(stagecode)
+    if state.CurrentStage == 0 then state.CurrentStage = 1 end
+end
+
+
+function set_ap_sigma_access(slot_data)
+    --option_medals = 1
+    --option_weapons = 2
+    --option_armor_upgrades = 4
+    --option_heart_tanks = 8
+    --option_sub_tanks = 16
+    --option_all = 31
+
+    if (slot_data['sigma_open']) then
+        local so = slot_data['sigma_open']
+        Tracker:FindObjectForCode("sigma_open").AcquiredCount = so
+        if (so & 1) > 0 then
+            set_if_exists(slot_data, 'sigma_medal_count')
+        end
+        if (so & 2) > 0 then
+            set_if_exists(slot_data, 'sigma_weapon_count')
+        end
+        if (so & 4) > 0 then
+            set_if_exists(slot_data, 'sigma_upgrade_count')
+        end
+        if (so & 8) > 0 then
+            set_if_exists(slot_data, 'sigma_heart_tank_count')
+        end
+        if (so & 16) > 0 then
+            set_if_exists(slot_data, 'sigma_sub_tank_count')
+        end
+    end
+end
 
 function onClear(slot_data)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -85,18 +119,6 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['pickupsanity'] then
-        local obj = Tracker:FindObjectForCode("pickupsanity")
-        local stage = slot_data['pickupsanity']
-        --print(string.format("pickupsanity found set to %d", stage))
-        if (stage >=2) then
-            stage = 2
-        end
-        if obj then
-            obj.CurrentStage = stage
-        end
-    end
-
     if slot_data['logic_charged_shotgun_ice'] then
         local obj = Tracker:FindObjectForCode("icelogic")
         local stage = slot_data['logic_charged_shotgun_ice']
@@ -108,59 +130,21 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['jammed_buster'] then
-        local obj = Tracker:FindObjectForCode("jammed_buster")
-        local stage = slot_data['jammed_buster']
-        if (stage >=2) then
-            stage = 2
-        end
-        if obj then
-            obj.CurrentStage = stage
-        end
-    end
+    enable_progressive_if_exists(slot_data, 'pickupsanity')
+    enable_progressive_if_exists(slot_data, 'jammed_buster')
 
-    if slot_data['starting_life_count'] then
-        local obj = Tracker:FindObjectForCode("startlives")
-        local count = slot_data['starting_life_count']
-        print(string.format("starting_life_count found set to %d", count))
-        obj.AcquiredCount = count
-    end
-
-    set_if_exists(slot_data, 'sigma_open')
-    set_if_exists(slot_data, 'sigma_weapon_count')
-    set_if_exists(slot_data, 'sigma_upgrade_count')
-    set_if_exists(slot_data, 'sigma_heart_tank_count')
-    set_if_exists(slot_data, 'sigma_sub_tank_count')
-    set_if_exists(slot_data, 'sigma_medal_count')
+    set_ap_sigma_access(slot_data)
 
     enable_progressive_if_exists(slot_data, 'logic_leg_sigma')
     enable_if_exists(slot_data, 'logic_boss_weakness')
     set_if_exists(slot_data, 'boss_weakness_rando')
+    enable_progressive_if_exists(slot_data, 'sigma_all_levels')
 
     if Tracker:FindObjectForCode('logic_boss_weakness').Active then
         if Tracker:FindObjectForCode('boss_weakness_rando').AcquiredCount == 0 then
             Tracker:FindObjectForCode('logic_boss_unshuffled_weakness').CurrentStage = 1
         end
     end
-
-    local sigmaopen = Tracker:FindObjectForCode('sigma_open').AcquiredCount
-    local sigmalogic = Tracker:FindObjectForCode('sigmalogic')
-    if sigmaopen == 0 then
-        sigmalogic.CurrentStage = 0
-    elseif sigmaopen == 1 then
-        sigmalogic.CurrentStage = 1
-    elseif sigmaopen == 2 then
-        sigmalogic.CurrentStage = 2
-    elseif sigmaopen == 4 then
-        sigmalogic.CurrentStage = 3
-    elseif sigmaopen == 8 then
-        sigmalogic.CurrentStage = 4
-    elseif sigmaopen == 16 then
-        sigmalogic.CurrentStage = 5
-    elseif sigmaopen == 31 then
-        sigmalogic.CurrentStage = 6
-    end
-
 
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
@@ -237,37 +221,28 @@ function onItem(index, item_id, item_name, player_number)
     end
 
     if item_id == 12453894 then
-        local state = Tracker:FindObjectForCode("launch_octopus_state")
-        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+        set_stage_state_unlocked("launch_octopus_state")
     end
     if item_id == 12453890 then
-        local state = Tracker:FindObjectForCode("armored_armadillo_state")
-        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+        set_stage_state_unlocked("armored_armadillo_state")
     end
     if item_id == 12453891 then
-        local state = Tracker:FindObjectForCode("boomer_kuwanger_state")
-        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+        set_stage_state_unlocked("boomer_kuwanger_state")
     end
     if item_id == 12453892 then
-        local state = Tracker:FindObjectForCode("chill_penguin_state")
-        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+        set_stage_state_unlocked("chill_penguin_state")
     end
-
     if item_id == 12453893 then
-        local state = Tracker:FindObjectForCode("flame_mammoth_state")
-        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+        set_stage_state_unlocked("flame_mammoth_state")
     end
     if item_id == 12453895 then
-        local state = Tracker:FindObjectForCode("spark_mandrill_state")
-        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+        set_stage_state_unlocked("spark_mandrill_state")
     end
     if item_id == 12453896 then
-        local state = Tracker:FindObjectForCode("sting_chameleon_state")
-        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+        set_stage_state_unlocked("sting_chameleon_state")
     end
     if item_id == 12453897 then
-        local state = Tracker:FindObjectForCode("storm_eagle_state")
-        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+        set_stage_state_unlocked("storm_eagle_state")
     end
 end
 

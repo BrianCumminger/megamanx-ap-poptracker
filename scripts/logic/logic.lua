@@ -92,54 +92,30 @@ function sigma_all_req_met()
 end
 
 function is_sigma_open()
-    --option_multiworld = 0
-    --option_medals = 1
-    --option_weapons = 2
-    --option_armor_upgrades = 4
-    --option_heart_tanks = 8
-    --option_sub_tanks = 16
-    --option_all = 31
+
     local legs_req_met = sigma_legs_req_met()
---[[
-    local sigma_mode = Tracker:ProviderCountForCode("sigma_open")
 
-    if sigma_mode == 0 then
+    local allreqs = Tracker:ProviderCountForCode("sigma_sub_tank_count") + Tracker:ProviderCountForCode("sigma_heart_tank_count") + Tracker:ProviderCountForCode("sigma_upgrade_count") + Tracker:ProviderCountForCode("sigma_weapon_count") + Tracker:ProviderCountForCode("sigma_medal_count")
+
+    if allreqs == 0 then
         return sigma_codes_req_met() and legs_req_met
-    elseif sigma_mode == 1 then
-        return sigma_medals_req_met() and legs_req_met
-    elseif sigma_mode == 2 then
-        return sigma_weapons_req_met() and legs_req_met
-    elseif sigma_mode == 4 then
-        return sigma_upgrade_req_met() and legs_req_met
-    elseif sigma_mode == 8 then
-        return sigma_heart_tanks_req_met() and legs_req_met
-    elseif sigma_mode == 16 then
-        return sigma_sub_tanks_req_met() and legs_req_met
-    elseif sigma_mode == 31 then
-        return sigma_all_req_met() and legs_req_met
     end
---]]
+    return sigma_all_req_met() and legs_req_met
 
-    local sigma_mode = Tracker:FindObjectForCode("sigmalogic").CurrentStage
-    if sigma_mode == 0 then
-        return sigma_codes_req_met() and legs_req_met
-    elseif sigma_mode == 1 then
-        return sigma_medals_req_met() and legs_req_met
-    elseif sigma_mode == 2 then
-        return sigma_weapons_req_met() and legs_req_met
-    elseif sigma_mode == 3 then
-        return sigma_upgrade_req_met() and legs_req_met
-    elseif sigma_mode == 4 then
-        return sigma_heart_tanks_req_met() and legs_req_met
-    elseif sigma_mode == 5 then
-        return sigma_sub_tanks_req_met() and legs_req_met
-    elseif sigma_mode == 6 then
-        return sigma_all_req_met() and legs_req_met
+end
+function are_sigma_two_and_three_open()
+    if Tracker:FindObjectForCode('sigma_all_levels').CurrentStage > 0 then
+        return is_sigma_open()
     end
-
-    print("Fell through to the end of is_sigma_open(), should not happen")
     return false
 end
+function is_sigma_four_open()
+    local sigma_1_cleared = Tracker:FindObjectForCode('sigma_1_cleared').Active
+    local sigma_2_cleared = Tracker:FindObjectForCode('sigma_2_cleared').Active
+    local sigma_3_cleared = Tracker:FindObjectForCode('sigma_3_cleared').Active
+    return sigma_1_cleared and sigma_2_cleared and sigma_3_cleared
+end
+
 
 function print_debug_sigma()
     print("get_weapons_count(): ", get_weapons_count())
@@ -153,5 +129,6 @@ function print_debug_sigma()
     print("sigma_sub_tanks_req_met(): ", sigma_sub_tanks_req_met())
     print("sigma_all_req_met(): ", sigma_all_req_met())
     print("is_sigma_open(): ", is_sigma_open())
+    print("sigma_open object: ", Tracker:ProviderCountForCode("sigma_open"))
 end
 
