@@ -22,7 +22,7 @@ Detects and tracks all logic as of Mega Man X AP 1.0 including:
 When using Archipelago auto tracking, logic settings will all be set automatically.  For manual operation (or to check which settings are active), click on the "Open Pack Settings" button at the top of PopTracker while this pack is loaded.
 
 Brief notes for various settings when not using autotracker:
-- Right hand side sigma options: sets the access requirements for Sigma stage 1.  If all of these are blank or set to 0, Sigma 1 will unlock when Sigma Stage Access Codes is acquired.
+- Right hand side sigma options: sets the access requirements for Sigma stage 1.  If all of these are blank or set to 0, Sigma 1 will unlock when Sigma Fortress Access Codes is acquired.
 - Bosses Require (Unshuffled) Weaknesses: Does not map directly to a yaml option.  If boss weaknesses are required by logic (`logic_boss_weakness: true`) and weaknesses are unshuffled (`boss_weakness_rando: vanilla`), this will show bosses as being in logic only if you have their required weakness.  Otherwise, bosses will always be shown as in logic if you can reach them.
 - Pickupsanity: same as yaml option, adds hp/weapon/life pickups to location pool.
 - Charged Ice Logic: yaml option `logic_charged_shotgun_ice`, puts various charged ice tricks into logic.
