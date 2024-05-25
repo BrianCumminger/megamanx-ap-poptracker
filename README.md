@@ -2,6 +2,8 @@
 
 This is a PopTracker pack for Mega Man X Archipelago. Created by MeridianBC.
 
+![](https://raw.githubusercontent.com/BrianCumminger/megamanx-ap-poptracker/master/images/screenshot.png)
+
 ## Installation
 
 Just download the lastest build or source and put in your PopTracker packs folder.
