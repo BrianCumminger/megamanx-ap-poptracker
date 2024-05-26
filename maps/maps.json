@@ -4,5 +4,83 @@
         "location_size": 10,
         "location_border_thickness": 2,
         "img": "images/maps/stages.png"
+    },
+    {
+        "name": "intro",
+        "location_size": 30,
+        "location_border_thickness": 2,
+        "img": "images/maps/intro.png"
+    },
+    {
+        "name": "armored_armadillo",
+        "location_size": 10,
+        "location_border_thickness": 2,
+        "img": "images/maps/armored_armadillo.png"
+    },
+    {
+        "name": "boomer_kuwanger",
+        "location_size": 15,
+        "location_border_thickness": 2,
+        "img": "images/maps/boomer_kuwanger.png"
+    },
+    {
+        "name": "chill_penguin",
+        "location_size": 10,
+        "location_border_thickness": 2,
+        "img": "images/maps/chill_penguin.png"
+    },
+    {
+        "name": "launch_octopus",
+        "location_size": 15,
+        "location_border_thickness": 2,
+        "img": "images/maps/launch_octopus.png"
+    },
+    {
+        "name": "flame_mammoth",
+        "location_size": 15,
+        "location_border_thickness": 2,
+        "img": "images/maps/flame_mammoth.png"
+    },
+    {
+        "name": "storm_eagle",
+        "location_size": 15,
+        "location_border_thickness": 2,
+        "img": "images/maps/storm_eagle.png"
+    },
+    {
+        "name": "spark_mandrill",
+        "location_size": 15,
+        "location_border_thickness": 2,
+        "img": "images/maps/spark_mandrill.png"
+    },
+    {
+        "name": "sting_chameleon",
+        "location_size": 15,
+        "location_border_thickness": 2,
+        "img": "images/maps/sting_chameleon.png"
+    },
+    {
+        "name": "sigma_fortress_1",
+        "location_size": 15,
+        "location_border_thickness": 2,
+        "img": "images/maps/sigma_fortress_1.png"
+    },
+    {
+        "name": "sigma_fortress_2",
+        "location_size": 19,
+        "location_border_thickness": 2,
+        "img": "images/maps/sigma_fortress_2.png"
+    },
+    {
+        "name": "sigma_fortress_3",
+        "location_size": 15,
+        "location_border_thickness": 2,
+        "img": "images/maps/sigma_fortress_3.png"
+    },
+    {
+        "name": "sigma_fortress_4",
+        "location_size": 15,
+        "location_border_thickness": 2,
+        "img": "images/maps/sigma_fortress_4.png"
     }
 ]

@@ -1,0 +1,125 @@
+{
+    "layouttabs": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Stage Select",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "stages"
+                    ]
+                }
+            },
+            {
+                "title": "Intro",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "intro"
+                    ]
+                }
+            },
+            {
+                "title": "Maverick Stages",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Launch Octopus",
+                            "content": {
+                                "type": "map",
+                                "maps": ["launch_octopus"]
+                            }
+                        },
+                        {
+                            "title": "Chill Penguin",
+                            "content": {
+                                "type": "map",
+                                "maps": ["chill_penguin"]
+                            }
+                        },
+                        {
+                            "title": "Armored Armadillo",
+                            "content": {
+                                "type": "map",
+                                "maps": ["armored_armadillo"]
+                            }
+                        },
+                        {
+                            "title": "Flame Mammoth",
+                            "content": {
+                                "type": "map",
+                                "maps": ["flame_mammoth"]
+                            }
+                        },
+                        {
+                            "title": "Storm Eagle",
+                            "content": {
+                                "type": "map",
+                                "maps": ["storm_eagle"]
+                            }
+                        },
+                        {
+                            "title": "Boomer Kuwanger",
+                            "content": {
+                                "type": "map",
+                                "maps": ["boomer_kuwanger"]
+                            }
+                        },
+                        {
+                            "title": "Spark Mandrill",
+                            "content": {
+                                "type": "map",
+                                "maps": ["spark_mandrill"]
+                            }
+                        },
+                        {
+                            "title": "Sting Chameleon",
+                            "content": {
+                                "type": "map",
+                                "maps": ["sting_chameleon"]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Sigma's Fortress",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Sigma Fortress 1",
+                            "content": {
+                                "type": "map",
+                                "maps": ["sigma_fortress_1"]
+                            }
+                        },
+                        {
+                            "title": "Sigma Fortress 2",
+                            "content": {
+                                "type": "map",
+                                "maps": ["sigma_fortress_2"]
+                            }
+                        },
+                        {
+                            "title": "Sigma Fortress 3",
+                            "content": {
+                                "type": "map",
+                                "maps": ["sigma_fortress_3"]
+                            }
+                        },
+                        {
+                            "title": "Sigma Fortress 4",
+                            "content": {
+                                "type": "map",
+                                "maps": ["sigma_fortress_4"]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

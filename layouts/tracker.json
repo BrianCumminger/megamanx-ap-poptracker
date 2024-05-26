@@ -23,17 +23,11 @@
                     ]
                 },
                 {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "stages"
-                                ]
-                            }
-                        }
-                    ]
+                    "type": "dock",
+                    "content":{
+                        "type": "layout",
+                        "key": "layouttabs"
+                    }
                 }
             ]
         }
