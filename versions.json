@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.1.0",
+            "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v0.1.0/megamanx-ap-poptracker.zip",
+            "sha256": "0b5eb70283f1428169c8e22aa903c1c02e953e1c18c6027ec871cb72343cb8ff",
+            "changelog": [
+                "Added stage maps"
+            ]
+        },
+        {
             "package_version": "0.0.2",
             "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v0.0.2/megamanx-ap-poptracker.zip",
             "sha256": "d55a2a5ea7cfb0a7ea32d07d8b399021b23d5653e70827f020880d3d9665211c",
