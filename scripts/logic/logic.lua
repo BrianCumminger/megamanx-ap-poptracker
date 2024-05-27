@@ -131,4 +131,3 @@ function print_debug_sigma()
     print("is_sigma_open(): ", is_sigma_open())
     print("sigma_open object: ", Tracker:ProviderCountForCode("sigma_open"))
 end
-

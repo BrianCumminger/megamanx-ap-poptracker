@@ -6,6 +6,25 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 
+TAB_SWITCH_KEY = ""
+
+TAB_MAPPING = {
+    [0] = "Stage Select",
+    [0x01] = "Intro",
+    [0x02] = "Maverick Stages/Launch Octopus",
+    [0x03] = "Maverick Stages/Sting Chameleon",
+    [0x04] = "Maverick Stages/Armored Armadillo",
+    [0x05] = "Maverick Stages/Flame Mammoth",
+    [0x06] = "Maverick Stages/Storm Eagle",
+    [0x07] = "Maverick Stages/Spark Mandrill",
+    [0x08] = "Maverick Stages/Boomer Kuwanger",
+    [0x09] = "Maverick Stages/Chill Penguin",
+    [0x0A] = "Sigma's Fortress/Sigma Fortress 1",
+    [0x0B] = "Sigma's Fortress/Sigma Fortress 2",
+    [0x0C] = "Sigma's Fortress/Sigma Fortress 3",
+    [0x0D] = "Sigma's Fortress/Sigma Fortress 4"
+}
+
 function onSetReply(key, value, old)
     return
 end
@@ -66,6 +85,16 @@ function set_ap_sigma_access(slot_data)
         end
         if (so & 16) > 0 then
             set_if_exists(slot_data, 'sigma_sub_tank_count')
+        end
+    end
+end
+
+function tab_switch_handler(tab_id)
+    print(string.format("tab_switch_handler(), tab_id=%x", tab_id))
+    if Tracker:FindObjectForCode('auto_tab_switch').CurrentStage == 1 then
+        for str in string.gmatch(TAB_MAPPING[tab_id], "([^/]+)") do
+            --print(string.format("On stage %x, switching to tab %s",tab_id,str))
+            Tracker:UiHint("ActivateTab", str)
         end
     end
 end
@@ -148,6 +177,16 @@ function onClear(slot_data)
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
 
+    PLAYER_ID = Archipelago.PlayerNumber or -1
+	TEAM_NUMBER = Archipelago.TeamNumber or 0
+
+    if Archipelago.PlayerNumber>-1 then
+		TAB_SWITCH_KEY="mmx1_level_id_"..TEAM_NUMBER.."_"..PLAYER_ID
+        print(string.format("SET NOTIFY %s",TAB_SWITCH_KEY))
+		Archipelago:SetNotify({TAB_SWITCH_KEY})
+		Archipelago:Get({TAB_SWITCH_KEY})
+	end
+
 end
 
 
@@ -212,7 +251,6 @@ function onItem(index, item_id, item_name, player_number)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
         print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
-        --print_debug_sigma()
     end
 
     if item_id == 12453894 then
@@ -353,6 +391,20 @@ function onBounce(json)
     -- your code goes here
 end
 
+function onNotify(key, value, old_value)
+    print(string.format("onNotify called. key=%s value=%s old_value=%s", key, value, old_value))
+    if key == TAB_SWITCH_KEY then
+        tab_switch_handler(value)
+    end
+end
+
+function onNotifyLaunch(key, value)
+    print(string.format("onNotifyLaunch called. key=%s value=%s", key, value))
+    if key == TAB_SWITCH_KEY then
+        tab_switch_handler(value)
+    end
+end
+
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClear)
@@ -362,6 +414,8 @@ end
 if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
     Archipelago:AddLocationHandler("location handler", onLocation)
 end
-Archipelago:AddSetReplyHandler("set reply handler", onSetReply)
--- Archipelago:AddScoutHandler("scout handler", onScout)
--- Archipelago:AddBouncedHandler("bounce handler", onBounce)
+--Archipelago:AddSetReplyHandler("set reply handler", onSetReply)
+Archipelago:AddSetReplyHandler("notify handler", onNotify)
+Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+--Archipelago:AddScoutHandler("scout handler", onScout)
+--Archipelago:AddBouncedHandler("bounce handler", onBounce)

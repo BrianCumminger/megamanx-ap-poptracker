@@ -752,5 +752,23 @@
       "img": "images/icons/sigma.png",
       "disabled_img": "images/icons/sigma_gray.png",
       "codes": "is_sigma_open"
+    },
+    {
+      "name": "Auto Switch Tabs",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "initial_stage_idx": 1,
+      "codes": "auto_tab_switch",
+      "stages": [
+        {
+          "img": "images/icons/tabswitch_gray.png",
+          "name": "Auto Switch Tabs - Off"
+        },
+        {
+          "img": "images/icons/tabswitch.png",
+          "name": "Auto Switch Tabs - On"
+        }
+      ]
     }
 ]

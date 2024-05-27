@@ -11,8 +11,8 @@
                 "content": [
                     {
                         "type": "itemgrid",
-                        "item_margin": "5, 7",
-                        "item_size": 60,
+                        "item_margin": "4, 5",
+                        "item_size": 50,
                         "h_alignment": "left",
                         "rows": [
                             ["blank", "launch_octopus_state", "chill_penguin_state", "blank"],
@@ -22,7 +22,8 @@
                             ["shotgun_ice", "electric_spark", "rolling_shield", "homing_torpedo"],
                             ["boomerang_cutter", "chameleon_sting", "storm_tornado", "fire_wave"],
                             ["helmet", "body", "arms", "legs"],
-                            ["heart_tank", "sub_tank", "hadouken","maverick_medal"]
+                            ["heart_tank", "sub_tank", "hadouken","maverick_medal"],
+                            ["auto_tab_switch", "", "", ""]
                         ]
                     }
                 ]

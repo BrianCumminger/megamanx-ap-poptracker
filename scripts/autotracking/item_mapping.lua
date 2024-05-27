@@ -1,9 +1,3 @@
-CURRENT_ITEM = nil
-
-ITEMS = {
-    {"toggle"}
-}
-
 ITEM_MAPPING = {
     [12453888] = {"victory", "consumable"},
     [12453889] = {"maverick_medal", "consumable"},

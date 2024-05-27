@@ -18,7 +18,7 @@ Detects and tracks all logic as of Mega Man X AP 1.0 including:
 - Legs required for Sigma
 - Boss weaknesses required
   
-Includes individual stage maps showing item locations.
+Includes individual stage maps showing item locations, with the option to automatically switch tabs (on by default).
 
 ## Usage
 When using Archipelago auto tracking, logic settings will all be set automatically.  For manual operation (or to check which settings are active), click on the "Open Pack Settings" button at the top of PopTracker while this pack is loaded.
