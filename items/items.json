@@ -91,7 +91,6 @@
         "disabled_img": "images/icons/sigma_gray.png",
         "codes": "stage_sigma_fortress"
     },
-
     {
         "name": "Shotgun Ice",
         "type": "toggle",
@@ -746,5 +745,12 @@
           "codes": "sigma_all_levels,sigma_all_levels_on"
         }
       ]
+    },
+    {
+      "name": "Sigma Fortress Access",
+      "type": "toggle",
+      "img": "images/icons/sigma.png",
+      "disabled_img": "images/icons/sigma_gray.png",
+      "codes": "is_sigma_open"
     }
 ]

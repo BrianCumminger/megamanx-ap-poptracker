@@ -7,10 +7,9 @@ LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 
 function onSetReply(key, value, old)
-    if key == "Mega Man X - Player " .. Archipelago.PlayerNumber .. " - Game Complete" then
-        Tracker:FindObjectForCode("gameover", ITEMS).Active = true
-    end
+    return
 end
+
 function set_if_exists(slot_data, slotname)
     if slot_data[slotname] then
         Tracker:FindObjectForCode(slotname).AcquiredCount = slot_data[slotname]
@@ -136,9 +135,9 @@ function onClear(slot_data)
     set_ap_sigma_access(slot_data)
 
     enable_progressive_if_exists(slot_data, 'logic_leg_sigma')
+    enable_progressive_if_exists(slot_data, 'sigma_all_levels')
     enable_if_exists(slot_data, 'logic_boss_weakness')
     set_if_exists(slot_data, 'boss_weakness_rando')
-    enable_progressive_if_exists(slot_data, 'sigma_all_levels')
 
     if Tracker:FindObjectForCode('logic_boss_weakness').Active then
         if Tracker:FindObjectForCode('boss_weakness_rando').AcquiredCount == 0 then
@@ -149,7 +148,6 @@ function onClear(slot_data)
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
 
-    --Archipelago:SetNotify({"Mega Man X - Player " .. Archipelago.PlayerNumber .. " - Game Complete"})
 end
 
 
@@ -214,10 +212,7 @@ function onItem(index, item_id, item_name, player_number)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
         print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
-        print_debug_sigma()
-    end
-    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-        -- add snes interface functions here for local item tracking
+        --print_debug_sigma()
     end
 
     if item_id == 12453894 then
@@ -243,6 +238,9 @@ function onItem(index, item_id, item_name, player_number)
     end
     if item_id == 12453897 then
         set_stage_state_unlocked("storm_eagle_state")
+    end
+    if is_sigma_open() then
+        Tracker:FindObjectForCode('stage_sigma_fortress').Active = true
     end
 end
 
