@@ -90,11 +90,15 @@ function set_ap_sigma_access(slot_data)
 end
 
 function tab_switch_handler(tab_id)
-    print(string.format("tab_switch_handler(), tab_id=%x", tab_id))
-    if Tracker:FindObjectForCode('auto_tab_switch').CurrentStage == 1 then
-        for str in string.gmatch(TAB_MAPPING[tab_id], "([^/]+)") do
-            --print(string.format("On stage %x, switching to tab %s",tab_id,str))
-            Tracker:UiHint("ActivateTab", str)
+    if tab_id then
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("tab_switch_handler(), tab_id=%x", tab_id))
+        end
+        if Tracker:FindObjectForCode('auto_tab_switch').CurrentStage == 1 then
+            for str in string.gmatch(TAB_MAPPING[tab_id], "([^/]+)") do
+                --print(string.format("On stage %x, switching to tab %s",tab_id,str))
+                Tracker:UiHint("ActivateTab", str)
+            end
         end
     end
 end
@@ -182,7 +186,9 @@ function onClear(slot_data)
 
     if Archipelago.PlayerNumber>-1 then
 		TAB_SWITCH_KEY="mmx1_level_id_"..TEAM_NUMBER.."_"..PLAYER_ID
-        print(string.format("SET NOTIFY %s",TAB_SWITCH_KEY))
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("SET NOTIFY %s",TAB_SWITCH_KEY))
+        end
 		Archipelago:SetNotify({TAB_SWITCH_KEY})
 		Archipelago:Get({TAB_SWITCH_KEY})
 	end
@@ -392,14 +398,18 @@ function onBounce(json)
 end
 
 function onNotify(key, value, old_value)
-    print(string.format("onNotify called. key=%s value=%s old_value=%s", key, value, old_value))
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("onNotify called. key=%s value=%s old_value=%s", key, value, old_value))
+    end
     if key == TAB_SWITCH_KEY then
         tab_switch_handler(value)
     end
 end
 
 function onNotifyLaunch(key, value)
-    print(string.format("onNotifyLaunch called. key=%s value=%s", key, value))
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("onNotifyLaunch called. key=%s value=%s", key, value))
+    end
     if key == TAB_SWITCH_KEY then
         tab_switch_handler(value)
     end
