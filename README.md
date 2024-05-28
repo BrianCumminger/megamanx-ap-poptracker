@@ -9,7 +9,7 @@ This is a PopTracker pack for Mega Man X Archipelago. Created by MeridianBC.
 Just download the lastest build or source and put in your PopTracker packs folder.
 
 ## Features
-Detects and tracks all logic as of Mega Man X AP 1.0 including:
+Detects and tracks all logic as of Mega Man X AP 1.0.2 including:
 
 - Charged shotgun ice logic
 - Pickupsanity
