@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.1.1",
+            "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v0.1.1/megamanx-ap-poptracker.zip",
+            "sha256": "5ffaa411ffc03c18b034cdb68cbd640f8aff58f8aa656f2b5e207185adfdf9dd",
+            "changelog": [
+                "Added tab auto switching, requires Mega Man X AP v1.0.2"
+            ]
+        },
+        {
             "package_version": "0.1.0",
             "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v0.1.0/megamanx-ap-poptracker.zip",
             "sha256": "0b5eb70283f1428169c8e22aa903c1c02e953e1c18c6027ec871cb72343cb8ff",
