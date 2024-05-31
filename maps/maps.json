@@ -13,49 +13,49 @@
     },
     {
         "name": "armored_armadillo",
-        "location_size": 10,
+        "location_size": 20,
         "location_border_thickness": 2,
         "img": "images/maps/armored_armadillo.png"
     },
     {
         "name": "boomer_kuwanger",
-        "location_size": 15,
+        "location_size": 19,
         "location_border_thickness": 2,
         "img": "images/maps/boomer_kuwanger.png"
     },
     {
         "name": "chill_penguin",
-        "location_size": 10,
+        "location_size": 15,
         "location_border_thickness": 2,
         "img": "images/maps/chill_penguin.png"
     },
     {
         "name": "launch_octopus",
-        "location_size": 15,
+        "location_size": 20,
         "location_border_thickness": 2,
         "img": "images/maps/launch_octopus.png"
     },
     {
         "name": "flame_mammoth",
-        "location_size": 15,
+        "location_size": 18,
         "location_border_thickness": 2,
         "img": "images/maps/flame_mammoth.png"
     },
     {
         "name": "storm_eagle",
-        "location_size": 15,
+        "location_size": 21,
         "location_border_thickness": 2,
         "img": "images/maps/storm_eagle.png"
     },
     {
         "name": "spark_mandrill",
-        "location_size": 15,
+        "location_size": 19,
         "location_border_thickness": 2,
         "img": "images/maps/spark_mandrill.png"
     },
     {
         "name": "sting_chameleon",
-        "location_size": 15,
+        "location_size": 17,
         "location_border_thickness": 2,
         "img": "images/maps/sting_chameleon.png"
     },
