@@ -9,7 +9,7 @@ This is a PopTracker pack for Mega Man X Archipelago. Created by MeridianBC.
 Just download the lastest build or source and put in your PopTracker packs folder.
 
 ## Features
-Detects and tracks all logic as of Mega Man X AP 1.0.2 including:
+Detects and tracks most logic as of Mega Man X AP 1.0.2 including:
 
 - Charged shotgun ice logic
 - Pickupsanity
@@ -19,6 +19,9 @@ Detects and tracks all logic as of Mega Man X AP 1.0.2 including:
 - Boss weaknesses required
   
 Includes individual stage maps showing item locations, with the option to automatically switch tabs (on by default).
+
+What's not handled:
+- Shuffled boss weaknesses - see usage section for details.
 
 ## Usage
 When using Archipelago auto tracking, logic settings will all be set automatically.  For manual operation (or to check which settings are active), click on the "Open Pack Settings" button at the top of PopTracker while this pack is loaded.

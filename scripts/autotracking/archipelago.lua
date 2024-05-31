@@ -56,7 +56,9 @@ function enable_progressive_if_exists(slot_data, slotname)
 end
 function set_stage_state_unlocked(stagecode)
     local state = Tracker:FindObjectForCode(stagecode)
-    if state.CurrentStage == 0 then state.CurrentStage = 1 end
+    if state then
+        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+    end
 end
 
 
@@ -178,6 +180,10 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['jammed_buster'] > 0 then
+        Tracker:FindObjectForCode('arms').CurrentStage = 0
+    end
+
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
 
@@ -285,6 +291,12 @@ function onItem(index, item_id, item_name, player_number)
     end
     if is_sigma_open() then
         Tracker:FindObjectForCode('stage_sigma_fortress').Active = true
+    end
+    if item_id == 12453918 then
+        local arms = Tracker:FindObjectForCode("arms")
+        if arms then
+            arms.CurrentStage = arms.CurrentStage + 1
+        end
     end
 end
 

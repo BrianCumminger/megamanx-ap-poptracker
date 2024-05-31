@@ -10,16 +10,8 @@ function has(item, amount)
 end
 
 function can_charge()
-    local jammed = Tracker:FindObjectForCode('jammed_buster').CurrentStage
     local arms = Tracker:FindObjectForCode("arms").CurrentStage
-    if jammed == 0 then
-        if arms > 0 then 
-            return true
-        end
-    elseif arms > 1 then
-        return true
-    end
-    return false
+    return arms >= 2
 end
 
 function boss_weaknesses_not_required()
@@ -47,7 +39,12 @@ function get_upgrades_count()
     if Tracker:FindObjectForCode("helmet").Active then upgrades = upgrades + 1 end
     if Tracker:FindObjectForCode("body").Active then upgrades = upgrades + 1 end
     if Tracker:FindObjectForCode("legs").Active then upgrades = upgrades + 1 end
-    if Tracker:FindObjectForCode("arms").CurrentStage > 0 then upgrades = upgrades + 1 end
+    local arms = Tracker:FindObjectForCode("arms").CurrentStage
+    if Tracker:FindObjectForCode('jammed_buster').CurrentStage == 0 then
+        if arms > 1 then upgrades = upgrades + arms - 1 end
+    else
+        upgrades = upgrades + arms
+    end
     return upgrades
 end
 

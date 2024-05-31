@@ -197,11 +197,11 @@
         "codes": "body"
     },
     {
-        "name": "Arms Upgrade",
-        "type": "toggle",
-        "img": "images/icons/arms.png",
-        "disabled_img": "images/icons/arms_gray.png",
-        "codes": "arms_old"
+      "name": "Arms Upgrade",
+      "type": "consumable",
+      "img": "images/icons/arms.png",
+      "disabled_img": "images/icons/arms_gray.png",
+      "codes": "arms_mapped"
     },
     {
         "name": "Legs Upgrade",
@@ -552,31 +552,32 @@
         ]
     },
     {
-        "name": "Arms Upgrade",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "codes": "arms",
-        "stages": [
-          {
-            "img": "images/icons/arms_gray.png",
-            "name": "No Arms Upgrade",
-            "codes": "arms0",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/arms.png",
-            "name": "Regular Arms Upgrade",
-            "codes": "arms1",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/arms2.png",
-            "name": "Extra Arms Upgrade",
-            "codes": "arms2",
-            "inherit_codes": true
-          }
-        ]
+      "name": "Arms Upgrade",
+      "type": "progressive",
+      "loop": false,
+      "allow_disabled": false,
+      "initial_stage_idx": 1,
+      "codes": "arms",
+      "stages": [
+        {
+          "img": "images/icons/arms_x.png",
+          "name": "Buster Jammed",
+          "codes": "arms0",
+          "inherit_codes": true
+        },
+        {
+          "img": "images/icons/arms_gray.png",
+          "name": "No Arms Upgrade",
+          "codes": "arms1",
+          "inherit_codes": true
+        },
+        {
+          "img": "images/icons/arms.png",
+          "name": "Regular Arms Upgrade",
+          "codes": "arms2",
+          "inherit_codes": true
+        }
+      ]
     },
       
     {
