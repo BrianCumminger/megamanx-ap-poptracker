@@ -5,7 +5,7 @@
             "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v0.1.2/megamanx-ap-poptracker.zip",
             "sha256": "4fb10714ca5b8c55596348a22afedd475598a351282ce680a35888e79d2913a5",
             "changelog": [
-                "Added tab auto switching, requires Mega Man X AP v1.0.2"
+                "Combined various close map items for a cleaner look, Changed arms/jammed buster to function the same as the X3 tracker, Fixed bug in armor upgrades count calculation, Added 'yellow' logic for bosses"
             ]
         },
         {
