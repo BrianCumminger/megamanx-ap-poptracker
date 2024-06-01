@@ -639,7 +639,7 @@
         "name": "Sigma Upgrade Count",
         "type": "consumable",
         "initial_quantity": 0,
-        "max_quantity": 4,
+        "max_quantity": 5,
         "overlay_font_size": 26,
         "img": "images/settings/sigmalogic_upgrades_count.png",
         "codes": "sigma_upgrade_count"
