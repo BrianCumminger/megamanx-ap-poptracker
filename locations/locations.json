@@ -1,6 +1,8 @@
 [
     {
         "name": "Stages",
+        "chest_unopened_img": "images/icons/chest.png",
+        "chest_opened_img": "images/icons/chest_opened.png",
         "children": [
             {
                 "name": "Intro Stage",
@@ -8,12 +10,12 @@
                 "sections": [
                     {
                         "name": "Bee Blader #1",
+                        "chest_unopened_img": "images/icons/beeblader.png",
                         "access_rules": []
                     },
                     {
                         "name": "HP Pickup (after Bee Blader)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "visibility_rules": [
                             "pickupsanity_on"
                         ],
@@ -22,7 +24,6 @@
                     {
                         "name": "Small HP Pickup (after Bee Blader)",
                         "chest_unopened_img": "images/icons/small_hp.png",
-                        "chest_opened_img": "images/icons/small_hp_gray.png",
                         "visibility_rules": [
                             "pickupsanity_on"
                         ],
@@ -30,10 +31,12 @@
                     },
                     {
                         "name": "Bee Blader #2",
+                        "chest_unopened_img": "images/icons/beeblader.png",
                         "access_rules": []
                     },
                     {
                         "name": "Get Defeated By Vile",
+                        "chest_unopened_img": "images/icons/vile.png",
                         "access_rules": []
                     }
                 ],
@@ -54,22 +57,18 @@
                     {
                         "name": "Legs Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
-                        "chest_opened_img": "images/icons/capsule_gray.png",
                         "access_rules": []
                     },
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
-                        "chest_opened_img": "images/icons/heart_gray.png",
                         "access_rules": [
                             "fire_wave"
                         ]
                     },
                     {
-                        
                         "name": "Weapon Energy Pickup (Inside third dome)",
                         "chest_unopened_img": "images/icons/large_energy.png",
-                        "chest_opened_img": "images/icons/large_energy_gray.png",
                         "access_rules": [
                             "fire_wave"
                         ],
@@ -79,6 +78,7 @@
                     },
                     {
                         "name": "Chill Penguin",
+                        "chest_unopened_img": "images/icons/chillpenguin.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[fire_wave]"
@@ -86,6 +86,7 @@
                     },
                     {
                         "name": "Chill Penguin Clear",
+                        "chest_unopened_img": "images/icons/chillpenguin.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[fire_wave]"
@@ -109,17 +110,16 @@
                     {
                         "name": "Sub Tank",
                         "chest_unopened_img": "images/icons/subtank.png",
-                        "chest_opened_img": "images/icons/subtank_gray.png",
                         "access_rules": []
                     },
                     {
                         "name": "Mole Borer #1",
+                        "chest_unopened_img": "images/icons/moleborer.png",
                         "access_rules": []
                     },
                     {
                         "name": "HP Pickup 1 (In blocked ceiling)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [
                             "helmet"
                         ],
@@ -130,7 +130,6 @@
                     {
                         "name": "HP Pickup 2 (In blocked ceiling)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [
                             "helmet"
                         ],
@@ -140,18 +139,17 @@
                     },
                     {
                         "name": "Mole Borer #2",
+                        "chest_unopened_img": "images/icons/moleborer.png",
                         "access_rules": []
                     },
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
-                        "chest_opened_img": "images/icons/heart_gray.png",
                         "access_rules": []
                     },
                     {
                         "name": "HP Pickup 3 (Next to Hadouken capsule)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -160,11 +158,11 @@
                     {
                         "name": "Hadouken Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
-                        "chest_opened_img": "images/icons/capsule_gray.png",
                         "access_rules": []
                     },
                     {
                         "name": "Armored Armadillo",
+                        "chest_unopened_img": "images/icons/armoredarmadillo.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[electric_spark]"
@@ -172,6 +170,7 @@
                     },
                     {
                         "name": "Armored Armadillo Clear",
+                        "chest_unopened_img": "images/icons/armoredarmadillo.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[electric_spark]"
@@ -195,19 +194,18 @@
                     {
                         "name": "Sub Tank",
                         "chest_unopened_img": "images/icons/subtank.png",
-                        "chest_opened_img": "images/icons/subtank_gray.png",
                         "access_rules": [
                             "boomerang_cutter"
                         ]
                     },
                     {
                         "name": "Thunder Slimer",
+                        "chest_unopened_img": "images/icons/thunderslimer.png",
                         "access_rules": []
                     },
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
-                        "chest_opened_img": "images/icons/heart_gray.png",
                         "access_rules": [
                             "boomerang_cutter",
                             "legs"
@@ -215,6 +213,7 @@
                     },
                     {
                         "name": "Spark Mandrill",
+                        "chest_unopened_img": "images/icons/sparkmandrill.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[shotgun_ice]"
@@ -222,6 +221,7 @@
                     },
                     {
                         "name": "Spark Mandrill Clear",
+                        "chest_unopened_img": "images/icons/sparkmandrill.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[shotgun_ice]"
@@ -244,16 +244,17 @@
                 "sections": [
                     {
                         "name": "Anglerge #1",
+                        "chest_unopened_img": "images/icons/anglerge.png",
                         "access_rules": []
                     },
                     {
                         "name": "Anglerge #2",
+                        "chest_unopened_img": "images/icons/anglerge.png",
                         "access_rules": []
                     },
                     {
                         "name": "HP Pickup (Crane platform above water)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -261,20 +262,22 @@
                     },
                     {
                         "name": "Utuboros #2",
+                        "chest_unopened_img": "images/icons/utuboros.png",
                         "access_rules": []
                     },
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
-                        "chest_opened_img": "images/icons/heart_gray.png",
                         "access_rules": []
                     },
                     {
                         "name": "Utuboros #1",
+                        "chest_unopened_img": "images/icons/utuboros.png",
                         "access_rules": []
                     },
                     {
                         "name": "Launch Octopus",
+                        "chest_unopened_img": "images/icons/launchoctopus.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[rolling_shield]"
@@ -282,6 +285,7 @@
                     },
                     {
                         "name": "Launch Octopus Clear",
+                        "chest_unopened_img": "images/icons/launchoctopus.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[rolling_shield]"
@@ -305,7 +309,6 @@
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
-                        "chest_opened_img": "images/icons/heart_gray.png",
                         "access_rules": [
                             "boomerang_cutter",
                             "icelogic_on,shotgun_ice,$can_charge"
@@ -313,6 +316,7 @@
                     },
                     {
                         "name": "Boomer Kuwanger",
+                        "chest_unopened_img": "images/icons/boomerkuwanger.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[homing_torpedo]"
@@ -320,6 +324,7 @@
                     },
                     {
                         "name": "Boomer Kuwanger Clear",
+                        "chest_unopened_img": "images/icons/boomerkuwanger.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[homing_torpedo]"
@@ -343,7 +348,6 @@
                     {
                         "name": "Body Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
-                        "chest_opened_img": "images/icons/capsule_gray.png",
                         "access_rules": [
                             "legs",
                             "icelogic_on,shotgun_ice,$can_charge"
@@ -352,7 +356,6 @@
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
-                        "chest_opened_img": "images/icons/heart_gray.png",
                         "access_rules": [
                             "legs, launch_octopus_2"
                         ]
@@ -360,7 +363,6 @@
                     {
                         "name": "1up Pickup (Inside second mini-cave in mountain)",
                         "chest_unopened_img": "images/icons/extralife.png",
-                        "chest_opened_img": "images/icons/extralife_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -369,7 +371,6 @@
                     {
                         "name": "HP Pickup (On top of platform in the swamp)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -377,6 +378,7 @@
                     },
                     {
                         "name": "Sting Chameleon",
+                        "chest_unopened_img": "images/icons/stingchameleon.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[boomerang_cutter]"
@@ -384,6 +386,7 @@
                     },
                     {
                         "name": "Sting Chameleon Clear",
+                        "chest_unopened_img": "images/icons/stingchameleon.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[boomerang_cutter]"
@@ -407,7 +410,6 @@
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
-                        "chest_opened_img": "images/icons/heart_gray.png",
                         "access_rules": [
                             "legs"
                         ]
@@ -415,7 +417,6 @@
                     {
                         "name": "HP Pickup 1 (Behind first set of gas tanks)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -424,7 +425,6 @@
                     {
                         "name": "HP Pickup 2 (Behind second set of gas tanks)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -433,7 +433,6 @@
                     {
                         "name": "HP Pickup 3 (Behind third set of gas tanks)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -442,7 +441,6 @@
                     {
                         "name": "1up Pickup 1 (Behind wall in third set of gas tanks)",
                         "chest_unopened_img": "images/icons/extralife.png",
-                        "chest_opened_img": "images/icons/extralife_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -451,14 +449,12 @@
                     {
                         "name": "Sub Tank",
                         "chest_unopened_img": "images/icons/subtank.png",
-                        "chest_opened_img": "images/icons/subtank_gray.png",
                         "access_rules": [],
                         "visibility_rules": []
                     },
                     {
                         "name": "1up Pickup 2 (Behind fourth set of gas tanks)",
                         "chest_unopened_img": "images/icons/extralife.png",
-                        "chest_opened_img": "images/icons/extralife_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -467,7 +463,6 @@
                     {
                         "name": "Helmet Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
-                        "chest_opened_img": "images/icons/capsule_gray.png",
                         "access_rules": [
                             "legs"
                         ]
@@ -475,7 +470,6 @@
                     {
                         "name": "1up Pickup 3 (Above helmet capsule)",
                         "chest_unopened_img": "images/icons/extralife.png",
-                        "chest_opened_img": "images/icons/extralife_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -483,6 +477,7 @@
                     },
                     {
                         "name": "Storm Eagle",
+                        "chest_unopened_img": "images/icons/stormeagle.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[chameleon_sting]"
@@ -490,6 +485,7 @@
                     },
                     {
                         "name": "Storm Eagle Clear",
+                        "chest_unopened_img": "images/icons/stormeagle.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[chameleon_sting]"
@@ -513,7 +509,6 @@
                     {
                         "name": "HP Pickup 1 (After first conveyor belts section)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -522,7 +517,6 @@
                     {
                         "name": "Arms Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
-                        "chest_opened_img": "images/icons/capsule_gray.png",
                         "access_rules": [
                             "legs,helmet"
                         ]
@@ -530,7 +524,6 @@
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
-                        "chest_opened_img": "images/icons/heart_gray.png",
                         "access_rules": [
                             "chill_penguin_2",
                             "$can_charge,chameleon_sting"
@@ -539,7 +532,6 @@
                     {
                         "name": "HP Pickup 2 (Top platform in Dig Labour section)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -548,7 +540,6 @@
                     {
                         "name": "1up Pickup (Top platform in Dig Labour section)",
                         "chest_unopened_img": "images/icons/extralife.png",
-                        "chest_opened_img": "images/icons/extralife_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -557,7 +548,6 @@
                     {
                         "name": "Sub Tank",
                         "chest_unopened_img": "images/icons/subtank.png",
-                        "chest_opened_img": "images/icons/subtank_gray.png",
                         "access_rules": [
                             "legs",
                             "icelogic_on,shotgun_ice,chameleon_sting,$can_charge"
@@ -565,6 +555,7 @@
                     },
                     {
                         "name": "Flame Mammoth",
+                        "chest_unopened_img": "images/icons/flamemammoth.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[storm_tornado]"
@@ -572,6 +563,7 @@
                     },
                     {
                         "name": "Flame Mammoth Clear",
+                        "chest_unopened_img": "images/icons/flamemammoth.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[storm_tornado]"
@@ -594,10 +586,12 @@
                 "sections": [
                     {
                         "name": "Vile",
+                        "chest_unopened_img": "images/icons/vile.png",
                         "access_rules": []
                     },
                     {
                         "name": "Boomer Kuwanger (Rematch)",
+                        "chest_unopened_img": "images/icons/boomerkuwanger.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[homing_torpedo]"
@@ -605,6 +599,7 @@
                     },
                     {
                         "name": "Bospider",
+                        "chest_unopened_img": "images/icons/bospider.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[shotgun_ice]"
@@ -628,6 +623,7 @@
                 "sections": [
                     {
                         "name": "Chill Penguin (Rematch)",
+                        "chest_unopened_img": "images/icons/chillpenguin.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[fire_wave]"
@@ -635,6 +631,7 @@
                     },
                     {
                         "name": "Storm Eagle (Rematch)",
+                        "chest_unopened_img": "images/icons/stormeagle.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[chameleon_sting]"
@@ -642,6 +639,7 @@
                     },
                     {
                         "name": "Rangda Bangda",
+                        "chest_unopened_img": "images/icons/rangda.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[chameleon_sting]"
@@ -665,6 +663,7 @@
                 "sections": [
                     {
                         "name": "Armored Armadillo (Rematch)",
+                        "chest_unopened_img": "images/icons/armoredarmadillo.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[electric_spark]"
@@ -673,7 +672,6 @@
                     {
                         "name": "HP Pickup 1 (Before Sting Chameleon rematch)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [
                             "legs,boomerang_cutter"
                         ],
@@ -683,6 +681,7 @@
                     },
                     {
                         "name": "Sting Chameleon (Rematch)",
+                        "chest_unopened_img": "images/icons/stingchameleon.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[boomerang_cutter]"
@@ -691,7 +690,6 @@
                     {
                         "name": "Weapon Energy Pickup 1 (Before Spark Mandrill rematch)",
                         "chest_unopened_img": "images/icons/large_energy.png",
-                        "chest_opened_img": "images/icons/large_energy_gray.png",
                         "access_rules": [
                             "boomerang_cutter"
                         ],
@@ -702,7 +700,6 @@
                     {
                         "name": "HP Pickup 2 (Before Spark Mandrill rematch)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [
                             "boomerang_cutter"
                         ],
@@ -712,6 +709,7 @@
                     },
                     {
                         "name": "Spark Mandrill (Rematch)",
+                        "chest_unopened_img": "images/icons/sparkmandrill.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[shotgun_ice]"
@@ -720,7 +718,6 @@
                     {
                         "name": "HP Pickup 3 (Before Launch Octopus rematch)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -729,7 +726,6 @@
                     {
                         "name": "Weapon Energy Pickup 2 (Before Launch Octopus rematch)",
                         "chest_unopened_img": "images/icons/large_energy.png",
-                        "chest_opened_img": "images/icons/large_energy_gray.png",
                         "access_rules": [],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -737,6 +733,7 @@
                     },
                     {
                         "name": "Launch Octopus (Rematch)",
+                        "chest_unopened_img": "images/icons/launchoctopus.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[rolling_shield]"
@@ -745,7 +742,6 @@
                     {
                         "name": "HP Pickup 4 (On spikes)",
                         "chest_unopened_img": "images/icons/large_hp.png",
-                        "chest_opened_img": "images/icons/large_hp_gray.png",
                         "access_rules": [
                             "$can_charge,chameleon_sting"
                         ],
@@ -756,7 +752,6 @@
                     {
                         "name": "Weapon Energy Pickup 3 (On Spikes)",
                         "chest_unopened_img": "images/icons/large_energy.png",
-                        "chest_opened_img": "images/icons/large_energy_gray.png",
                         "access_rules": [
                             "$can_charge,chameleon_sting"
                         ],
@@ -767,7 +762,6 @@
                     {
                         "name": "1up Pickup (On spikes)",
                         "chest_unopened_img": "images/icons/extralife.png",
-                        "chest_opened_img": "images/icons/extralife_gray.png",
                         "access_rules": [
                             "$can_charge,chameleon_sting",
                             "$can_charge,shotgun_ice"
@@ -778,6 +772,7 @@
                     },
                     {
                         "name": "Flame Mammoth (Rematch)",
+                        "chest_unopened_img": "images/icons/flamemammoth.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[storm_tornado]"
@@ -785,6 +780,7 @@
                     },
                     {
                         "name": "D-Rex",
+                        "chest_unopened_img": "images/icons/drex.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[boomerang_cutter]"
@@ -807,6 +803,7 @@
                 "sections": [
                     {
                         "name": "Velguarder",
+                        "chest_unopened_img": "images/icons/velguarder.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[shotgun_ice]"
@@ -814,6 +811,7 @@
                     },
                     {
                         "name": "Sigma",
+                        "chest_unopened_img": "images/icons/sigma.png",
                         "access_rules": [
                             "[$boss_weaknesses_not_required]",
                             "[electric_spark,rolling_shield]"
