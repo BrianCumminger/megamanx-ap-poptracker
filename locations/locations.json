@@ -63,14 +63,16 @@
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
                         "access_rules": [
-                            "fire_wave"
+                            "fire_wave",
+                            "[fire_wave],hadouken"
                         ]
                     },
                     {
                         "name": "Weapon Energy Pickup (Inside third dome)",
                         "chest_unopened_img": "images/icons/large_energy.png",
                         "access_rules": [
-                            "fire_wave"
+                            "fire_wave",
+                            "[fire_wave],hadouken"
                         ],
                         "visibility_rules": [
                             "pickupsanity_on"
