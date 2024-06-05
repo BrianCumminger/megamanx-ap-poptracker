@@ -82,16 +82,16 @@
                         "name": "Chill Penguin",
                         "chest_unopened_img": "images/icons/chillpenguin.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[fire_wave]"
+                            "$has_weakness_for|Chill Penguin",
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     },
                     {
                         "name": "Chill Penguin Clear",
                         "chest_unopened_img": "images/icons/chillpenguin.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[fire_wave]"
+                            "$has_weakness_for|Chill Penguin",
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     }
                 ],
@@ -166,16 +166,16 @@
                         "name": "Armored Armadillo",
                         "chest_unopened_img": "images/icons/armoredarmadillo.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[electric_spark]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Armored Armadillo"
                         ]
                     },
                     {
                         "name": "Armored Armadillo Clear",
                         "chest_unopened_img": "images/icons/armoredarmadillo.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[electric_spark]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Armored Armadillo"
                         ]
                     }
                 ],
@@ -217,16 +217,16 @@
                         "name": "Spark Mandrill",
                         "chest_unopened_img": "images/icons/sparkmandrill.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[shotgun_ice]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Spark Mandrill"
                         ]
                     },
                     {
                         "name": "Spark Mandrill Clear",
                         "chest_unopened_img": "images/icons/sparkmandrill.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[shotgun_ice]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Spark Mandrill"
                         ]
                     }
                 ],
@@ -281,16 +281,16 @@
                         "name": "Launch Octopus",
                         "chest_unopened_img": "images/icons/launchoctopus.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[rolling_shield]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Launch Octopus"
                         ]
                     },
                     {
                         "name": "Launch Octopus Clear",
                         "chest_unopened_img": "images/icons/launchoctopus.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[rolling_shield]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Launch Octopus"
                         ]
                     }
                 ],
@@ -320,16 +320,16 @@
                         "name": "Boomer Kuwanger",
                         "chest_unopened_img": "images/icons/boomerkuwanger.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[homing_torpedo]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Boomer Kuwanger"
                         ]
                     },
                     {
                         "name": "Boomer Kuwanger Clear",
                         "chest_unopened_img": "images/icons/boomerkuwanger.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[homing_torpedo]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Boomer Kuwanger"
                         ]
                     }
                 ],
@@ -382,16 +382,16 @@
                         "name": "Sting Chameleon",
                         "chest_unopened_img": "images/icons/stingchameleon.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[boomerang_cutter]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Sting Chameleon"
                         ]
                     },
                     {
                         "name": "Sting Chameleon Clear",
                         "chest_unopened_img": "images/icons/stingchameleon.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[boomerang_cutter]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Sting Chameleon"
                         ]
                     }
                 ],
@@ -481,16 +481,16 @@
                         "name": "Storm Eagle",
                         "chest_unopened_img": "images/icons/stormeagle.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[chameleon_sting]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Storm Eagle"
                         ]
                     },
                     {
                         "name": "Storm Eagle Clear",
                         "chest_unopened_img": "images/icons/stormeagle.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[chameleon_sting]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Storm Eagle"
                         ]
                     }
                 ],
@@ -559,16 +559,16 @@
                         "name": "Flame Mammoth",
                         "chest_unopened_img": "images/icons/flamemammoth.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[storm_tornado]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Flame Mammoth"
                         ]
                     },
                     {
                         "name": "Flame Mammoth Clear",
                         "chest_unopened_img": "images/icons/flamemammoth.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[storm_tornado]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Flame Mammoth"
                         ]
                     }
                 ],
@@ -589,22 +589,25 @@
                     {
                         "name": "Vile",
                         "chest_unopened_img": "images/icons/vile.png",
-                        "access_rules": []
+                        "access_rules": [
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Vile"
+                        ]
                     },
                     {
                         "name": "Boomer Kuwanger (Rematch)",
                         "chest_unopened_img": "images/icons/boomerkuwanger.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[homing_torpedo]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Boomer Kuwanger"
                         ]
                     },
                     {
                         "name": "Bospider",
                         "chest_unopened_img": "images/icons/bospider.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[shotgun_ice]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Bospider"
                         ]
                     }
                 ],
@@ -627,24 +630,24 @@
                         "name": "Chill Penguin (Rematch)",
                         "chest_unopened_img": "images/icons/chillpenguin.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[fire_wave]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Chill Penguin"
                         ]
                     },
                     {
                         "name": "Storm Eagle (Rematch)",
                         "chest_unopened_img": "images/icons/stormeagle.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[chameleon_sting]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Storm Eagle"
                         ]
                     },
                     {
                         "name": "Rangda Bangda",
                         "chest_unopened_img": "images/icons/rangda.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[chameleon_sting]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Rangda Bangda"
                         ]
                     }
                 ],
@@ -667,8 +670,8 @@
                         "name": "Armored Armadillo (Rematch)",
                         "chest_unopened_img": "images/icons/armoredarmadillo.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[electric_spark]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Armored Armadillo"
                         ]
                     },
                     {
@@ -685,8 +688,8 @@
                         "name": "Sting Chameleon (Rematch)",
                         "chest_unopened_img": "images/icons/stingchameleon.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[boomerang_cutter]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Sting Chameleon"
                         ]
                     },
                     {
@@ -713,8 +716,8 @@
                         "name": "Spark Mandrill (Rematch)",
                         "chest_unopened_img": "images/icons/sparkmandrill.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[shotgun_ice]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Spark Mandrill"
                         ]
                     },
                     {
@@ -737,8 +740,8 @@
                         "name": "Launch Octopus (Rematch)",
                         "chest_unopened_img": "images/icons/launchoctopus.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[rolling_shield]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Launch Octopus"
                         ]
                     },
                     {
@@ -776,16 +779,16 @@
                         "name": "Flame Mammoth (Rematch)",
                         "chest_unopened_img": "images/icons/flamemammoth.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[storm_tornado]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Flame Mammoth"
                         ]
                     },
                     {
                         "name": "D-Rex",
                         "chest_unopened_img": "images/icons/drex.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[boomerang_cutter]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|D-Rex"
                         ]
                     }
                 ],
@@ -807,16 +810,16 @@
                         "name": "Velguarder",
                         "chest_unopened_img": "images/icons/velguarder.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[shotgun_ice]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Velguarder"
                         ]
                     },
                     {
                         "name": "Sigma",
                         "chest_unopened_img": "images/icons/sigma.png",
                         "access_rules": [
-                            "[$boss_weaknesses_not_required]",
-                            "[electric_spark,rolling_shield]"
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Sigma"
                         ]
                     }
                 ],

@@ -171,13 +171,11 @@ function onClear(slot_data)
 
     enable_progressive_if_exists(slot_data, 'logic_leg_sigma')
     enable_progressive_if_exists(slot_data, 'sigma_all_levels')
+    Tracker:FindObjectForCode('boss_weakness_strictness').CurrentStage = slot_data['boss_weakness_strictness']
     enable_if_exists(slot_data, 'logic_boss_weakness')
-    set_if_exists(slot_data, 'boss_weakness_rando')
 
     if Tracker:FindObjectForCode('logic_boss_weakness').Active then
-        if Tracker:FindObjectForCode('boss_weakness_rando').AcquiredCount == 0 then
-            Tracker:FindObjectForCode('logic_boss_unshuffled_weakness').CurrentStage = 1
-        end
+            Tracker:FindObjectForCode('setting_weakness').CurrentStage = 1
     end
 
     if slot_data['jammed_buster'] > 0 then
@@ -199,6 +197,7 @@ function onClear(slot_data)
 		Archipelago:Get({TAB_SWITCH_KEY})
 	end
 
+    BOSS_WEAKNESSES = slot_data['boss_weaknesses']
 end
 
 
@@ -298,6 +297,8 @@ function onItem(index, item_id, item_name, player_number)
             arms.CurrentStage = arms.CurrentStage + 1
         end
     end
+    print(string.format("boss_buster_damage_possible: %s",boss_buster_damage_possible()))
+    print(string.format("boss_weaknesses_not_required: %s",boss_weaknesses_not_required()))
 end
 
 -- called when a location gets cleared

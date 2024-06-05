@@ -697,36 +697,53 @@
         "codes": "logic_boss_weakness"
     },
     {
-        "name": "Boss Weakness Rando",
-        "type": "consumable",
-        "img": "images/icons/sigma.png",
-        "codes": "boss_weakness_rando"
-    },
-    {
-      "name": "Logic Boss Unshuffled Weakness",
+      "name": "Bosses Logically Require Weaknesses",
       "type": "progressive",
       "loop": true,
       "allow_disabled": false,
       "stages": [
           {
-            "img": "images/settings/unshuffled_weaknesses_off.png",
-            "name": "Logic Boss Unshuffled Weakness - Off",
-            "codes": "logic_boss_unshuffled_weakness,logic_boss_unshuffled_weakness_off",
+            "img": "images/settings/weaknesses_off.png",
+            "name": "Bosses Logically Require Weaknesses - Off",
+            "codes": "setting_weakness,setting_weakness_off",
             "inherit_codes": false
           },
           {
-            "img": "images/settings/unshuffled_weaknesses_on.png",
-            "name": "Logic Boss Unshuffled Weakness - On",
-            "codes": "logic_boss_unshuffled_weakness,logic_boss_unshuffled_weakness_on"
+            "img": "images/settings/weaknesses_on.png",
+            "name": "Bosses Logically Require Weaknesses - On",
+            "codes": "setting_weakness,setting_weakness_on"
           }
         ]
     },
     {
         "name": "Boss Weakness Strictness",
-        "type": "consumable",
-        "img": "images/icons/sigma.png",
-        "disabled_img": "images/icons/sigma.png",
-        "codes": "boss_weakness_strictness"
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "boss_weakness_strictness",
+        "stages": [
+          {
+            "img": "images/settings/setting_strictness_0.png",
+            "name": "Boss Weakness Strictness - Not Strict",
+            "codes": "boss_weakness_strictness_0",
+            "inherit_codes": false
+          },
+          {
+            "img": "images/settings/setting_strictness_1.png",
+            "name": "Boss Weakness Strictness - Weakness and Buster",
+            "codes": "boss_weakness_strictness_1"
+          },
+          {
+            "img": "images/settings/setting_strictness_2.png",
+            "name": "Boss Weakness Strictness - Weakness and Upgraded Buster",
+            "codes": "boss_weakness_strictness_2"
+          },
+          {
+            "img": "images/settings/setting_strictness_3.png",
+            "name": "Boss Weakness Strictness - Only Weakness",
+            "codes": "boss_weakness_strictness_3"
+          }
+        ]
     },
     {
       "name": "Group Sigma Levels",

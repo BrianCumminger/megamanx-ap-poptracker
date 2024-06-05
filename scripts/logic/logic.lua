@@ -8,6 +8,10 @@ function has(item, amount)
         return count >= amount
     end
 end
+function is_active(item)
+    return Tracker:FindObjectForCode(item).Active
+end
+
 
 function can_charge()
     local arms = Tracker:FindObjectForCode("arms").CurrentStage
@@ -15,12 +19,19 @@ function can_charge()
 end
 
 function boss_weaknesses_not_required()
-    --local logic_boss_weakness = Tracker:FindObjectForCode("logic_boss_weakness").Active
-    --local boss_weakness_strictness = Tracker:FindObjectForCode("boss_weakness_strictness").Active
-    --if (not logic_boss_weakness) and (not boss_weakness_strictness) then return true end
-    local logic_boss_unshuffled_weakness = Tracker:FindObjectForCode('logic_boss_unshuffled_weakness').CurrentStage == 1
-    return not logic_boss_unshuffled_weakness
+    local setting_weakness = Tracker:FindObjectForCode('setting_weakness').CurrentStage == 1
+    return not setting_weakness
 end
+
+function boss_buster_damage_possible()
+    local strictness = Tracker:FindObjectForCode("boss_weakness_strictness").CurrentStage
+    if strictness == 3 then return false end
+    if strictness == 2 then
+        return can_charge()
+    end
+    return true
+end
+
 
 function get_weapons_count()
     local weapons = 0
@@ -127,4 +138,60 @@ function print_debug_sigma()
     print("sigma_all_req_met(): ", sigma_all_req_met())
     print("is_sigma_open(): ", is_sigma_open())
     print("sigma_open object: ", Tracker:ProviderCountForCode("sigma_open"))
+end
+
+WEAPON_CHECKS = {
+    [0x00] = function() return true end, --"Lemon",
+    [0x01] = function() return Tracker:FindObjectForCode("arms").CurrentStage >= 1 end, --"Charged Shot (Level 1)",
+    [0x02] = function() return can_charge() end, --"Charged Shot (Level 3, Bullet Stream)",
+    [0x03] = function() return Tracker:FindObjectForCode("arms").CurrentStage >= 1 end, --"Charged Shot (Level 2)",
+    [0x04] = function() return is_active("hadouken") end, --"Hadouken",
+    [0x06] = function() return is_active("legs") end, --"Lemon (Dash)",
+    [0x07] = function() return is_active("homing_torpedo") end, --"Uncharged Homing Torpedo",
+    [0x08] = function() return is_active("chameleon_sting") end, --"Uncharged Chameleon Sting",
+    [0x09] = function() return is_active("rolling_shield") end, --"Uncharged Rolling Shield",
+    [0x0A] = function() return is_active("fire_wave") end, --"Uncharged Fire Wave",
+    [0x0B] = function() return is_active("storm_tornado") end, --"Uncharged Storm Tornado",
+    [0x0C] = function() return is_active("electric_spark") end, --"Uncharged Electric Spark",
+    [0x0D] = function() return is_active("boomerang_cutter") end, --"Uncharged Boomerang Cutter",
+    [0x0E] = function() return is_active("shotgun_ice") end, --"Uncharged Shotgun Ice",
+    [0x10] = function() return can_charge() and is_active("homing_torpedo") end, --"Charged Homing Torpedo",
+    [0x12] = function() return can_charge() and is_active("rolling_shield") end, --"Charged Rolling Shield",
+    [0x13] = function() return can_charge() and is_active("fire_wave") end, --"Charged Fire Wave",
+    [0x14] = function() return can_charge() and is_active("storm_tornado") end, --"Charged Storm Tornado",
+    [0x15] = function() return can_charge() and is_active("electric_spark") end, --"Charged Electric Spark",
+    [0x16] = function() return can_charge() and is_active("boomerang_cutter") end, --"Charged Boomerang Cutter",
+    [0x17] = function() return can_charge() and is_active("shotgun_ice") end, --"Charged Shotgun Ice",
+    [0x1D] = function() return can_charge() end, --"Charged Shot (Level 3, Shockwave)",
+}
+
+--vanilla weaknesses
+BOSS_WEAKNESSES = {
+    ["Wolf Sigma"] =            {[1] = 2,[2] = 29,[3] = 9,[4] = 18,},
+    ["Boomer Kuwanger"] =       {[1] = 7,[2] = 16,},
+    ["Vile"] =                  {[1] = 7,[2] = 16,},
+    ["Launch Octopus"] =        {[1] = 9,[2] = 18,},
+    ["Rangda Bangda"] =         {[1] = 8,},
+    ["Flame Mammoth"] =         {[1] = 11,[2] = 20,},
+    ["Armored Armadillo"] =     {[1] = 12,[2] = 21,},
+    ["Thunder Slimer"] =        {[1] = 0,[2] = 6,[3] = 1,[4] = 3,[5] = 2,[6] = 29,},
+    ["Spark Mandrill"] =        {[1] = 14,[2] = 23,},
+    ["Chill Penguin"] =         {[1] = 10,[2] = 19,},
+    ["D-Rex"] =                 {[1] = 13,[2] = 22,},
+    ["Storm Eagle"] =           {[1] = 8,},
+    ["Sting Chameleon"] =       {[1] = 13,[2] = 22,},
+    ["Sigma"] =                 {[1] = 12,[2] = 21,},
+    ["Bospider"] =              {[1] = 14,[2] = 23,},
+    ["Velguarder"] =            {[1] = 14,[2] = 23,},
+}
+
+function has_weakness_for(bossname)
+    --print(string.format("Checking weaknesses for %s", bossname))
+    for _,weapon in ipairs(BOSS_WEAKNESSES[bossname]) do
+        local fn = WEAPON_CHECKS[weapon]
+        --print(string.format("has weakness for weapon 0x%x: %s", weapon, fn()))
+        if fn() then return true end
+    end
+    --print("Player does not have weakness")
+    return false
 end

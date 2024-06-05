@@ -15,9 +15,9 @@
                         ["pickupsanity", "sigma_medal_count"],
                         ["icelogic", "sigma_weapon_count"],
                         ["jammed_buster", "sigma_upgrade_count"],
-                        ["logic_boss_unshuffled_weakness", "sigma_heart_tank_count"],
-                        ["logic_leg_sigma", "sigma_sub_tank_count"],
-                        ["sigma_all_levels", ""]
+                        ["setting_weakness", "sigma_heart_tank_count"],
+                        ["boss_weakness_strictness", "sigma_sub_tank_count"],
+                        ["sigma_all_levels", "logic_leg_sigma"]
                     ]
             }
         ]
