@@ -1,6 +1,18 @@
 {
     "versions": [
         {
+            "package_version": "1.0.0",
+            "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v1.0.0/megamanx-ap-poptracker.zip",
+            "sha256": "3572c92064d52b43405a0cf264d21792961678e78e733a3772f5c38a44242294",
+            "changelog": [
+                "Version 1.0 because all game logic is now tracked and therefore should be feature complete for now",
+                "Reworked boss weaknesses. Weaknesses are now detected and used for logic calculations, with vanilla weaknesses as a fallback if not autotracking",
+                "Bosses that can be reached and damaged but not required by logic are shown in yellow",
+                "Added yellow logic for hadouken on Chill Penguin domes",
+                "Added game-themed map icons to replace the default chest location marker"
+            ]
+        },
+        {
             "package_version": "0.1.2",
             "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v0.1.2/megamanx-ap-poptracker.zip",
             "sha256": "4fb10714ca5b8c55596348a22afedd475598a351282ce680a35888e79d2913a5",
