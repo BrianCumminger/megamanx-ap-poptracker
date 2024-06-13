@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.0.1",
+            "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v1.0.1/megamanx-ap-poptracker.zip",
+            "sha256": "4bdb8ad026e1735bd1b9faa054dea7ab317cf22b9bd8460ebb08b5d04a2b98cf",
+            "changelog": [
+                "Fixed missing Thunder Slimer weakness check"
+            ]
+        },
+        {
             "package_version": "1.0.0",
             "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v1.0.0/megamanx-ap-poptracker.zip",
             "sha256": "3572c92064d52b43405a0cf264d21792961678e78e733a3772f5c38a44242294",
