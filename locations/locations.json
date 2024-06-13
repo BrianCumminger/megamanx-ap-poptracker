@@ -203,14 +203,19 @@
                     {
                         "name": "Thunder Slimer",
                         "chest_unopened_img": "images/icons/thunderslimer.png",
-                        "access_rules": []
+                        "access_rules": [
+                            "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "$has_weakness_for|Thunder Slimer"
+                        ]
                     },
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
                         "access_rules": [
-                            "boomerang_cutter",
-                            "legs"
+                            "boomerang_cutter,$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "boomerang_cutter,$has_weakness_for|Thunder Slimer",
+                            "legs,$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "legs,$has_weakness_for|Thunder Slimer"
                         ]
                     },
                     {
@@ -218,7 +223,7 @@
                         "chest_unopened_img": "images/icons/sparkmandrill.png",
                         "access_rules": [
                             "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
-                            "$has_weakness_for|Spark Mandrill"
+                            "$has_weakness_for|Thunder Slimer,$has_weakness_for|Spark Mandrill"
                         ]
                     },
                     {
@@ -226,7 +231,7 @@
                         "chest_unopened_img": "images/icons/sparkmandrill.png",
                         "access_rules": [
                             "$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
-                            "$has_weakness_for|Spark Mandrill"
+                            "$has_weakness_for|Thunder Slimer,$has_weakness_for|Spark Mandrill"
                         ]
                     }
                 ],
