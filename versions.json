@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.0.2",
+            "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v1.0.2/megamanx-ap-poptracker.zip",
+            "sha256": "3858d7a6257a8081682cdc1b08ca150e1d12055a02f6287c1ffc9f5d23cd0a74",
+            "changelog": [
+                "Added additional optional legs upgrade"
+            ]
+        },
+        {
             "package_version": "1.0.1",
             "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v1.0.1/megamanx-ap-poptracker.zip",
             "sha256": "4bdb8ad026e1735bd1b9faa054dea7ab317cf22b9bd8460ebb08b5d04a2b98cf",
