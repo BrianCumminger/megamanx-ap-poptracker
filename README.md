@@ -9,6 +9,10 @@ This is a PopTracker pack for Mega Man X Archipelago. Created by MeridianBC.
 Just download the lastest build or source and put in your PopTracker packs folder.
 
 ## Recent Changes
+
+### v1.0.2 (June 14, 2024)
+- Added additional optional legs upgrade
+
 ### v1.0.1 (June 12, 2024)
 - Fixed missing Thunder Slimer weakness check
 
@@ -26,7 +30,7 @@ Just download the lastest build or source and put in your PopTracker packs folde
 - Added 'yellow' logic for bosses
 
 ## Features
-Detects and tracks all logic as of Mega Man X AP 1.0.2 including:
+Detects and tracks all logic as of Mega Man X AP 1.1.0 including:
 
 - Charged shotgun ice logic
 - Pickupsanity
