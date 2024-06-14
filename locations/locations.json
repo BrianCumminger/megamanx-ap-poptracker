@@ -214,8 +214,8 @@
                         "access_rules": [
                             "boomerang_cutter,$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
                             "boomerang_cutter,$has_weakness_for|Thunder Slimer",
-                            "legs,$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
-                            "legs,$has_weakness_for|Thunder Slimer"
+                            "legs1,$boss_buster_damage_possible,[$boss_weaknesses_not_required]",
+                            "legs1,$has_weakness_for|Thunder Slimer"
                         ]
                     },
                     {
@@ -356,7 +356,7 @@
                         "name": "Body Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
                         "access_rules": [
-                            "legs",
+                            "legs1",
                             "icelogic_on,shotgun_ice,$can_charge"
                         ]
                     },
@@ -364,7 +364,7 @@
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
                         "access_rules": [
-                            "legs, launch_octopus_2"
+                            "legs1, launch_octopus_2"
                         ]
                     },
                     {
@@ -418,7 +418,7 @@
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
                         "access_rules": [
-                            "legs"
+                            "legs1"
                         ]
                     },
                     {
@@ -471,7 +471,7 @@
                         "name": "Helmet Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
                         "access_rules": [
-                            "legs"
+                            "legs1"
                         ]
                     },
                     {
@@ -525,7 +525,7 @@
                         "name": "Arms Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
                         "access_rules": [
-                            "legs,helmet"
+                            "legs1,helmet"
                         ]
                     },
                     {
@@ -556,7 +556,7 @@
                         "name": "Sub Tank",
                         "chest_unopened_img": "images/icons/subtank.png",
                         "access_rules": [
-                            "legs",
+                            "legs1",
                             "icelogic_on,shotgun_ice,chameleon_sting,$can_charge"
                         ]
                     },
@@ -683,7 +683,7 @@
                         "name": "HP Pickup 1 (Before Sting Chameleon rematch)",
                         "chest_unopened_img": "images/icons/large_hp.png",
                         "access_rules": [
-                            "legs,boomerang_cutter"
+                            "legs1,boomerang_cutter"
                         ],
                         "visibility_rules": [
                             "pickupsanity_on"

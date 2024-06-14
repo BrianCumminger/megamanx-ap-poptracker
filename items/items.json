@@ -204,11 +204,31 @@
       "codes": "arms_mapped"
     },
     {
-        "name": "Legs Upgrade",
-        "type": "toggle",
-        "img": "images/icons/legs.png",
-        "disabled_img": "images/icons/legs_gray.png",
-        "codes": "legs"
+      "name": "Legs Upgrade",
+      "type": "progressive",
+      "loop": false,
+      "allow_disabled": false,
+      "codes": "legs",
+      "stages": [
+        {
+          "img": "images/icons/legs_gray.png",
+          "name": "No Legs Upgrade",
+          "codes": "legs0",
+          "inherit_codes": true
+        },
+        {
+          "img": "images/icons/legs.png",
+          "name": "Legs Upgrade",
+          "codes": "legs1",
+          "inherit_codes": true
+        },
+        {
+          "img": "images/icons/legs2.png",
+          "name": "Air Dash Legs Upgrade",
+          "codes": "legs2",
+          "inherit_codes": true
+        }
+      ]
     },
 
 
