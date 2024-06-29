@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.0.3",
+            "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v1.0.3/megamanx-ap-poptracker.zip",
+            "sha256": "62ce920e9fe3259f43a289c3f6066594cc4c7d59e40175b5d20a0b4e9dd59c88",
+            "changelog": [
+                "Fixed bug detecting dash lemon weakness"
+            ]
+        },
+        {
             "package_version": "1.0.2",
             "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v1.0.2/megamanx-ap-poptracker.zip",
             "sha256": "3858d7a6257a8081682cdc1b08ca150e1d12055a02f6287c1ffc9f5d23cd0a74",
