@@ -146,7 +146,7 @@ WEAPON_CHECKS = {
     [0x02] = function() return can_charge() end, --"Charged Shot (Level 3, Bullet Stream)",
     [0x03] = function() return Tracker:FindObjectForCode("arms").CurrentStage >= 1 end, --"Charged Shot (Level 2)",
     [0x04] = function() return is_active("hadouken") end, --"Hadouken",
-    [0x06] = function() return is_active("legs") end, --"Lemon (Dash)",
+    [0x06] = function() return Tracker:FindObjectForCode("legs").CurrentStage >= 1 end, --"Lemon (Dash)",
     [0x07] = function() return is_active("homing_torpedo") end, --"Uncharged Homing Torpedo",
     [0x08] = function() return is_active("chameleon_sting") end, --"Uncharged Chameleon Sting",
     [0x09] = function() return is_active("rolling_shield") end, --"Uncharged Rolling Shield",
