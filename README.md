@@ -10,6 +10,9 @@ Just download the lastest build or source and put in your PopTracker packs folde
 
 ## Recent Changes
 
+### v1.0.3 (June 29, 2024)
+- Fixed bug detecting dash lemon weakness
+
 ### v1.0.2 (June 14, 2024)
 - Added additional optional legs upgrade
 
