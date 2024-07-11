@@ -123,7 +123,8 @@
                         "name": "HP Pickup 1 (In blocked ceiling)",
                         "chest_unopened_img": "images/icons/large_hp.png",
                         "access_rules": [
-                            "helmet"
+                            "helmet",
+                            "[helmet],boomerang_cutter"
                         ],
                         "visibility_rules": [
                             "pickupsanity_on"
@@ -133,7 +134,8 @@
                         "name": "HP Pickup 2 (In blocked ceiling)",
                         "chest_unopened_img": "images/icons/large_hp.png",
                         "access_rules": [
-                            "helmet"
+                            "helmet",
+                            "[helmet],boomerang_cutter"
                         ],
                         "visibility_rules": [
                             "pickupsanity_on"
