@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.0.4",
+            "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v1.0.4/megamanx-ap-poptracker.zip",
+            "sha256": "fd97eedba3d9d53c804c237639c24de49c51a3c2b8ca78a14680eb207f0e15b2",
+            "changelog": [
+                "Added Armored Armadillo HP pickups yellow logic"
+            ]
+        },
+        {
             "package_version": "1.0.3",
             "download_url": "https://github.com/BrianCumminger/megamanx-ap-poptracker/releases/download/v1.0.3/megamanx-ap-poptracker.zip",
             "sha256": "62ce920e9fe3259f43a289c3f6066594cc4c7d59e40175b5d20a0b4e9dd59c88",
