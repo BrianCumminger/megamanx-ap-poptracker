@@ -10,6 +10,9 @@ Just download the lastest build or source and put in your PopTracker packs folde
 
 ## Recent Changes
 
+### v1.0.4 (July 11, 2024)
+- Added Armored Armadillo HP pickups yellow logic
+
 ### v1.0.3 (June 29, 2024)
 - Fixed bug detecting dash lemon weakness
 
